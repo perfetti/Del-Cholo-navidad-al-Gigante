@@ -1,1 +1,549 @@
-<h1>This is the Homepage</h1>
+<!-- Intro Header -->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<header class="intro">
+
+    <!-- Video from YouTube. Have Questions? How To: https://github.com/pupunzi/jquery.mb.YTPlayer/wiki -->
+    <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=N_rBf2j_WxQ', containment:'.intro', autoPlay:true, loop:true, mute:true, startAt:8, stopAt: 60, quality:'small', opacity:1, showControls: false, showYTLogo:false, vol:25}"></a>
+
+    <div class="intro-body">
+        <div class="container">
+            <div class="col-md-7">
+                <h1 class="brand-heading"><img src="http://ernestosanz.org.ar/imagenes/layout/logo.png"><span class="color">ERNESTO</span></h1>
+                <p class="intro-text">Frase inspiradora.</p>
+            </div>
+            <div class="col-md-5">
+                <ul class="list-inline lead">
+                    <li>
+                        <a href="#about" class="btn btn-primary btn-lg page-scroll"><i class="fa fa-chevron-down"></i> Perfil</a>
+                    </li>
+                    <li>
+                        <a href="#action" class="btn btn-default btn-lg page-scroll"><i class="fa fa-chevron-down"></i>Voluntarios</a>
+                    </li>
+                </ul>
+            </div>
+
+<!--             DIDI CHANGED
+            <div class="video-controls">
+                <a id="video-volume" class="fa fa-volume-off fa-lg" href="#"></a>
+                <a id="video-play" class="fa fa-pause fa-lg" href="#"></a>
+            </div> -->
+
+        </div>
+    </div>
+</header>
+
+
+<!-- Action Section -->
+<section id="action" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 split-padding">
+            <h5 class="headerline">Voluntarios</h5>
+              <%= form_tag("/search", method: "get") do %>
+              <%= label_tag("Nombre:") %>
+              <%= text_field_tag(:q) %> 
+              <%= label_tag("Apellido:") %>
+              <%= text_field_tag(:q) %> <br>
+              <%= label_tag("Telefono:") %>
+              <%= text_field_tag(:q) %> 
+              <%= label_tag("Email:") %>
+              <%= text_field_tag(:q) %> <br>
+              <%= label_tag("C. Postal:") %>
+              <%= text_field_tag(:q) %> <br>
+ <!--              <%= submit_tag("Enviar") %> -->
+            <% end %>
+            <p><a href="/" class="btn btn-default btn-lg">ENVIAR</a></p>
+
+        </div>
+
+
+
+        <div class="col-lg-6 col-md-6 split-padding0">
+            <h5 class="headerline">DONACIONES</h5>
+            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur ipsum dolor sit amet consecte ipsum dolor sit amet consecte tur adipiscingtitor diam, tur adipiscingtitor diam.</p>
+            <p><a href="/" class="btn btn-default btn-lg">DONAR</a></p>
+        </div>
+
+
+
+
+
+
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 split-padding3">
+            <h2 class="headerline">QUIENES SOMOS?</h2>
+            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreet  amet consecte tur adipiscingtitor diam, a accumsan justo laoreet.</p>
+            <p>Lorem ipsum dolor sit amet consecte tur <a href="/">adipiscingtitor</a> diam, a accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreet  amet consecte.</p>
+        </div>
+    </div>
+</section>
+
+<!-- About2 Section -->
+<section id="about2" class="container-fluid">
+    <div class="row split-padding4">
+        <div class="col-lg-3 col-sm-6">
+            <h4 class="headerline">VOLUNTARIADO</h4>
+            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet.</p>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <h4 class="headerline">EDUCACION</h4>
+            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor. </p>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <h4 class="headerline">APOYO Y AYUDA</h4>
+            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur. </p>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <h4 class="headerline">CARIEDAD</h4>
+            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum. </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Project Section -->
+<section id="project" class="head">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2 class="headerline">Nuestras Propuestas</h2>
+                <h4>Lorem ipsum dolor sit amet consecte tur adipiscingtitor.</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="project wow fadeIn">
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
+                <a data-target="#projectModal1" class="project-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Educacion Para Todos
+                        </div>
+                    </div>
+                    <img src="https://agenda.weforum.org/espanol/files/2015/02/reu-ebook-reader-nook-640x400.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
+                <a data-target="#projectModal2" class="project-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Apoyo Infantil
+                        </div>
+                    </div>
+                    <img src="http://lanoticia.hn/wp-content/uploads/2014/01/messi-2013-640x400.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
+                <a data-target="#projectModal3" class="project-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Salud Publica
+                        </div>
+                    </div>
+                    <img src="http://cdn.forbes.com.mx/2014/03/web-gates-millonarios-640x400.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
+                <a data-target="#projectModal4" class="project-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Acceso A Agua Potable
+                        </div>
+                    </div>
+                    <img src="http://comouno.tv/wp-content/uploads/2015/04/Marco-en.wikipedia.org_-640x400-640x400.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
+                <a data-target="#projectModal5" class="project-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Apoyo Educativo
+                        </div>
+                    </div>
+                    <img src="http://lamaletaextraviada.com/wp-content/uploads/2012/08/TheoGosselin08-640x400.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
+                <a data-target="#projectModal6" class="project-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Alimentacion Saludable
+                        </div>
+                    </div>
+                    <img src="http://cdn.forbes.com.mx/2015/06/Shell_F-640x400.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
+                <a data-target="#projectModal7" class="project-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Programa Deportivo
+                        </div>
+                    </div>
+                    <img src="http://crock.com.ar/wp-content/uploads/2015/05/Lenny-Kravitz-640x400.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
+                <a data-target="#projectModal8" class="project-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            Acceso A Agua Potable
+                        </div>
+                    </div>
+                    <img src="http://upload.wikimedia.org/wikipedia/commons/d/db/Capybara_Hattiesburg_Zoo_(70909b-50)_640x400.jpg" class="img-responsive center-block" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- project Modals -->
+<div class="work">
+    <div class="project-modal modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="container">
+                <h2>Educacion Para Todos</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="img/project/1.jpg" class="img-responsive img-centered" alt="">
+                        <img src="img/10.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>
+                            Fecha: <strong>Octubre 2014</strong><br>
+                            Donacion: <strong>$78,354 / $1,26,500</strong>
+                        </p>
+                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="container">
+                <h2>Apoyo Infantil</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="img/project/2.jpg" class="img-responsive img-centered" alt="">
+                        <img src="img/1.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>
+                            Fecha: <strong>Octubre 2014</strong><br>
+                            Donacion: <strong>$78,354 / $1,26,500</strong>
+                        </p>
+                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal modal fade" id="projectModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="container">
+                <h2>Salud Publica</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="img/project/3.jpg" class="img-responsive img-centered" alt="">
+                        <img src="img/6.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>
+                            Fecha: <strong>Octubre 2014</strong><br>
+                            Donacion: <strong>$78,354 / $1,26,500</strong>
+                        </p>
+                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal modal fade" id="projectModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="container">
+                <h2>Acceso A Agua Potable</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="img/project/4.jpg" class="img-responsive img-centered" alt="">
+                        <img src="img/9.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>
+                            Fecha: <strong>Octubre 2014</strong><br>
+                            Donacion: <strong>$78,354 / $1,26,500</strong>
+                        </p>
+                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal modal fade" id="projectModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="container">
+                <h2>Apoyo Educativos</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="img/project/5.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>
+                            Fecha: <strong>Octubre 2014</strong><br>
+                            Donacion: <strong>$78,354 / $1,26,500</strong>
+                        </p>
+                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal modal fade" id="projectModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="container">
+                <h2>Alimentacion Saludable</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="img/project/6.jpg" class="img-responsive img-centered" alt="">
+                        <img src="img/11.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>
+                            Fecha: <strong>Octubre 2014</strong><br>
+                            Donacion: <strong>$78,354 / $1,26,500</strong>
+                        </p>
+                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal modal fade" id="projectModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="container">
+                <h2>Programa Deportivo</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="img/project/7.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>
+                            Fecha: <strong>Octubre 2014</strong><br>
+                            Donacion: <strong>$78,354 / $1,26,500</strong>
+                        </p>
+                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal modal fade" id="projectModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="container">
+                <h2>Acceso A Agua Potabla</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <img src="img/project/8.jpg" class="img-responsive img-centered" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        <p>
+                            Fecha: <strong>Octubre 2014</strong><br>
+                            Donacion: <strong>$78,354 / $1,26,500</strong>
+                        </p>
+                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- About3 Section -->
+<section id="about3" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 split-padding4">
+            <h3 class="headerline">VOLUNTARIADO</h3>
+            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. </p>
+            <h3 class="headerline">EDUCACION</h3>
+            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. </p>
+        </div>
+        <div class="col-sm-6 split-padding5">
+            <h3 class="headerline">AYUDA Y APOYO</h3>
+            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. </p>
+            <h3 class="headerline">CARIEDAD</h3>
+            <p>Sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. </p>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section id="mission" class="container-fluid text-center">
+    <div class="overlay"></div>
+    <div class="row">
+        <h2 class="headerline">Nuestra Mision</h2>
+        <br>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <h4><i class="fa fa-3x fa-child"></i>El Nivel De Vida</h4>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <h4><i class="fa fa-3x fa-star"></i>Pensar de Forma Diferente</h4>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <h4><i class="fa fa-3x fa-globe"></i>Proteccion Ambiental</h4>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <h4><i class="fa fa-3x fa-graduation-cap"></i>Apoyo a la Educacion</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <h4><i class="fa fa-3x fa-heart"></i> Un Planeta Vivo</h4>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <h4><i class="fa fa-3x fa-female"></i> Derechos Humanos</h4>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <h4><i class="fa fa-3x fa-eyedropper"></i> Agua Potable</h4>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <h4><i class="fa fa-3x fa-university"></i>Activismo Politico</h4>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="container-fluid text-center">
+
+    <div class="row">
+        <h2 class="headerline">Nuestro Equipo</h2><br>
+
+        <div class="col-lg-3 col-md-6">
+            <h4 class="headerline">Fulano de Tal</h4>
+            <p><img src="img/avatar1.jpg" class="img-responsive center-block" alt=""></p>
+            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor</p>
+            <ul class="list-inline lead">
+                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-behance fa-stack-1x fa-inverse"></i></span></a></li>
+                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-steam fa-stack-1x fa-inverse"></i></span></a></li>
+                <li><a href="mailto:"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <h4 class="headerline">Pablo Mengano</h4>
+            <p><img src="img/avatar2.jpg" class="img-responsive center-block" alt=""></p>
+            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor</p>
+            <ul class="list-inline lead">
+                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-skype fa-stack-1x fa-inverse"></i></span></a></li>
+                <li><a href="mailto:"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-dribbble fa-stack-1x fa-inverse"></i></span></a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <h4 class="headerline">Juana Perez</h4>
+            <p><img src="img/avatar3.jpg" class="img-responsive center-block" alt=""></p>
+            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor</p>
+            <ul class="list-inline lead">
+                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-tumblr fa-stack-1x fa-inverse"></i></span></a></li>
+                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-pinterest fa-stack-1x fa-inverse"></i></span></a></li>
+                <li><a href="mailto:"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <h4 class="headerline">Andrea Gutierrez</h4>
+            <p><img src="img/avatar4.jpg" class="img-responsive center-block" alt=""></p>
+            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor</p>
+            <ul class="list-inline lead">
+                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-behance fa-stack-1x fa-inverse"></i></span></a></li>
+                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
+                <li><a href="mailto:"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></a></li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container-fluid text-center">
+    <div class="overlay"></div>
+    <div class="col-lg-6 col-lg-offset-3">
+        <h2 class="headerline">Contacto</h2>
+        <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam</p>
+        <h3><i class="fa fa-phone"></i> (123) 456-7890</h3>
+        <ul class="list-inline lead">
+            <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+            <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+            <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li>
+            <li><a href=""><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></a></li>
+        </ul>
+        <p><i class="fa fa-map-marker"></i> Paraguay 4519, Palermo, Buenos Aires</p>
+        <p class="text-muted">Copyright &copy; Ernesto Sanz 2015</p>
+    </div>
+</section>

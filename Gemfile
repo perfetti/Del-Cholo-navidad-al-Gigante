@@ -13,6 +13,10 @@ gem 'inherited_resources'
 gem 'devise'
 gem 'ransack'
 gem 'rails_12factor'
+gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
+
+gem 'autoprefixer-rails'
+gem 'execjs'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets

@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sanz</title>
+  <title>Sanz Ernesto</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
-<% flash.each do |key,value| %>
+
+
+  <%= render 'shared/navbar' %>
+
+	<div class="main-page-content <%= controller.controller_name %>">
+	<% flash.each do |key,value| %>
 	<p><%= value %></p>
-<% end %>
-<%= yield %>
+  <% end %>
+
+		<%= yield %>
+	</div>
+        <script type="text/javascript">
+            $('#videoheader').videoBG({
+              mp4:'http://syddev.com/jquery.videoBG/assets/tunnel_animation.mp4',
+              ogv:'http://syddev.com/jquery.videoBG/assets/tunnel_animation.ogv',
+              webm:'http://syddev.com/jquery.videoBG/assets/tunnel_animation.webm',
+              poster:'http://syddev.com/jquery.videoBG/assets/tunnel_animation.jpg',
+              loop: true,
+              scale:true,
+              zIndex:2
+            });
+        </script>
 
 </body>
 </html>

@@ -13,4 +13,15 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+// Load all Bootstrap JavaScript
+//= require bootstrap-sprockets
+//= require bootstrap/scrollspy
+//= require bootstrap/modal
+//= require bootstrap/dropdown
+//= require jquery.mb.YTPlayer.js
+//= require device.min.js
+//= require jquery.countdown.min.js
+//= require jquery.easing.min.js
+//= require smoothscroll.js
+//= require lovehub.js
 //= require_tree .
