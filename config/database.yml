@@ -16,7 +16,7 @@ default: &default
 development:
   <<: *default
   adapter: postgresql
-  database: myrubyblog
+  database: sanz
   user: postgres
   password: Raggio88
 
