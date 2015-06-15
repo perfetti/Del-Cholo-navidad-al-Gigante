@@ -1,0 +1,10 @@
+<% @posts.each do |post| %>
+	<div class="post">
+	<%= image_tag post.image.url(:large) %>
+	<h2 class="title"><%= link_to post.title,post%></h2>
+	<div class="entry"><%=  post.body %></div>
+
+	<div class="byline">
+	</div>	
+</div>
+<% end %>

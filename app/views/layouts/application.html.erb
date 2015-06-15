@@ -13,9 +13,11 @@
   <%= render 'shared/navbar' %>
 
 	<div class="main-page-content <%= controller.controller_name %>">
+  <div class="flash-message">
 	<% flash.each do |key,value| %>
 	<p><%= value %></p>
   <% end %>
+  </div>
 
 		<%= yield %>
 	</div>
