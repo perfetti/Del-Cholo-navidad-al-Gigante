@@ -1,87 +1,467 @@
-<h1>Pages#perfiles</h1>
+<% provide(:perfiles, "active") %>
+<% provide(:title, "Perfiles") %>
+
+
+
+
+<div class="intro section header" id="page-nav-top">
+      <div class="w-embed">
+
+      <%= image_tag "equipo/headerEquipo.png", style: "width:100% !important; min-height: 500px !important; position:absolute; z-index: -1;"  %>
+      </div>
+    <div class="container-fluid">
+         <div class="intro-body">
+        <div class="container-fluid">
+          <div class="row socialBTNs">
+            <div class="col-md-5">
+                <ul class="list-inline lead">
+                    <li>
+                        <%= link_to (image_tag "social/fb-icon.png"), "https://www.facebook.com/ernestoricardosanz" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/t-icon.png"), "https://twitter.com/sanzernesto" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/i-icon.png"), "https://instagram.com/sanz2015/" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/yt-icon.png"), "https://www.youtube.com/user/sanzernestor" %>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+            </div>
+            <div class="col-md-2">
+               <%= link_to (image_tag "social/dona.png"), "#" %>
+            </div>
+
+
+            </div>
+            <div class="row">
+                 <h1 class="brand-heading perfiles">Perfiles<span class="color"></span></h1>
+                <p class="intro-text"></p>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!--Video Section Ends Here-->
+
+  <%= render 'shared/navbar' %>
+
+
+
+
+
+
+
 <!-- About Section -->
-<section id="about" class="container-fluid">
+<div class="container content">
     <div class="row">
-        <div class="col-sm-6 split-padding3">
-            <h2 class="headerline">QUIENES SOMOS?</h2>
-            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreet  amet consecte tur adipiscingtitor diam, a accumsan justo laoreet.</p>
-            <p>Lorem ipsum dolor sit amet consecte tur <a href="/">adipiscingtitor</a> diam, a accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreet  amet consecte.</p>
+        <div class="col-sm-12">
+   
+            <div class="sanzyllach">
+
+            <%= image_tag "equipo/sanzllach.png", style: "display: inline;", usemap: "sanzllachmap", class: "sanzllach" %>
+            <map name="sanzllachmap">
+                <area shape="rect" coords="60,60,833,924" class="sanzmap" alt="sanzmap" target="" href="#perfilSanz" data-toggle="modal"/>
+                <area shape="rect" coords="896,60,1651,924" class="llachmap" alt="llachmap" target="" href="#perfilLlach" data-toggle="modal"/>
+            </map>
+            <%= image_tag "equipo/SanzLlachDer2.png", class: "SanzLlachDer2", usemap: "llachmap" %>
+            <map name="llachmap">
+              <area shape="rect" coords="35,52,697,811" class="llachmap" alt="llachmap" target="" href="#perfilLlach" data-toggle="modal"/>
+            </map>
+            <%= image_tag "equipo/SanzLlachIzq2.png", class: "SanzLlachIzq2", usemap: "sanzmap" %>
+            <map name="sanzmap">
+              <area shape="rect" coords="52,52,730,811" class="sanzmap" alt="sanzmap" target="" href="#perfilSanz" data-toggle="modal" />
+            </map>
+            </div>
+
+
+<!--  -->            <hr>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row" style="padding-bottom: 30px;">
+        <h3 class="perfiles">EXPERTOS PROGRAMATICOS</h3>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row" style="padding-bottom: 30px;">
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="#perfilFQuetgla">
+                
+                <h3>Fabio Quetglas</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            </div>
+
+            <%= image_tag "equipo/FQuetgla.png" %>
+
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="#perfilMTetaz">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+            </div>
+
+            <%= image_tag "equipo/MTetaz.png" %>
+
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="#perfilHAguiar">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+            </div>
+            <%= image_tag "equipo/HAguiar.png" %>
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="#perfilARamos">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+            </div>
+            <%= image_tag "equipo/ARamos.png" %>
         </div>
     </div>
-</section>
-
-<!-- About2 Section -->
-<section id="about2" class="container-fluid">
-    <div class="row split-padding4">
-        <div class="col-lg-3 col-sm-6">
-            <h4 class="headerline">VOLUNTARIADO</h4>
-            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet.</p>
+</div>
+<div class="container">
+    <div class="row" style="padding-bottom: 30px;">
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="#perfilASalomon">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+            </div>
+           <%= image_tag "equipo/ASalomon.png" %> 
         </div>
-        <div class="col-lg-3 col-sm-6">
-            <h4 class="headerline">EDUCACION</h4>
-            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor. </p>
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="#perfilACampero">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+            </div>
+            <%= image_tag "equipo/ACampero.png" %>
         </div>
-        <div class="col-lg-3 col-sm-6">
-            <h4 class="headerline">APOYO Y AYUDA</h4>
-            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur. </p>
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="#perfilKBanfi">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+            </div>
+           <%= image_tag "equipo/KBanfi.png" %> 
         </div>
-        <div class="col-lg-3 col-sm-6">
-            <h4 class="headerline">CARIEDAD</h4>
-            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum. </p>
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="#perfilVVassel">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+            </div>
+            <%= image_tag "equipo/VVassel.png" %>
         </div>
     </div>
-</section>
-
-<!-- Team Section -->
-<section id="team" class="container-fluid text-center">
-
-    <div class="row">
-        <h2 class="headerline">Nuestro Equipo</h2><br>
-
-        <div class="col-lg-3 col-md-6">
-            <h4 class="headerline">Fulano de Tal</h4>
-            <p><img src="img/avatar1.jpg" class="img-responsive center-block" alt=""></p>
-            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor</p>
-            <ul class="list-inline lead">
-                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-behance fa-stack-1x fa-inverse"></i></span></a></li>
-                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-steam fa-stack-1x fa-inverse"></i></span></a></li>
-                <li><a href="mailto:"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li>
-            </ul>
+</div>
+<div class="container">
+    <div class="row" style="padding-bottom: 30px;">
+        <div class="col-sm-3 standard" modal-name="#perfilAStubrin">
+            <div class="caption">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+            </div>
+           <%= image_tag "equipo/AStubrin.png" %> 
         </div>
-        <div class="col-lg-3 col-md-6">
-            <h4 class="headerline">Pablo Mengano</h4>
-            <p><img src="img/avatar2.jpg" class="img-responsive center-block" alt=""></p>
-            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor</p>
-            <ul class="list-inline lead">
-                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
-                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-skype fa-stack-1x fa-inverse"></i></span></a></li>
-                <li><a href="mailto:"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-dribbble fa-stack-1x fa-inverse"></i></span></a></li>
-            </ul>
+        <div class="col-sm-3 standard" modal-name="#perfilLLuchilo">
+            <div class="caption">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+            </div>
+           <%= image_tag "equipo/LLuchilo.png" %> 
         </div>
-        <div class="col-lg-3 col-md-6">
-            <h4 class="headerline">Juana Perez</h4>
-            <p><img src="img/avatar3.jpg" class="img-responsive center-block" alt=""></p>
-            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor</p>
-            <ul class="list-inline lead">
-                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-tumblr fa-stack-1x fa-inverse"></i></span></a></li>
-                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-pinterest fa-stack-1x fa-inverse"></i></span></a></li>
-                <li><a href="mailto:"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></a></li>
-            </ul>
+        <div class="col-sm-3 standard" modal-name="#perfilLQuevedo">
+            <div class="caption">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+            </div>
+           <%= image_tag "equipo/LQuevedo.png" %> 
         </div>
-        <div class="col-lg-3 col-md-6">
-            <h4 class="headerline">Andrea Gutierrez</h4>
-            <p><img src="img/avatar4.jpg" class="img-responsive center-block" alt=""></p>
-            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor</p>
-            <ul class="list-inline lead">
-                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-behance fa-stack-1x fa-inverse"></i></span></a></li>
-                <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
-                <li><a href="mailto:"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></a></li>
-            </ul>
+        <div class="col-sm-3" id="menu">
+            <a href="#"><h2>MENU</h2></a>
         </div>
-
     </div>
-</section>
+</div>
+
+
+<div class="modal fade" id="perfilSanz" role="dialog">
+  <div class="modal-dialog bio">
+    <div class="modal-content backgroundable">
+
+          <div class="modal-header">
+           <h1>Ernesto Sanz</h1>
+          </div>
+          <div class="modal-body">
+
+            <%= image_tag "equipo/ESanz.png" %>
+
+            <p>Nació en San Rafael, provincia de Mendoza, en el año 1956. Es abogado por herencia y político por vocación. Presidente de la Juventud Radical de su ciudad entre 1983 y 1985, inició su actividad política con todo el entusiasmo de la recuperación de la democracia. Fue intendente de San Rafael entre el año 1999 y el 2003, cuando fue elegido senador nacional por su provincia. Desde el año 2006 al 2010 fue miembro del Consejo de la Magistratura. Actual senador de la Nación por la provincia de Mendoza en un segundo mandato, es también presidente de la Unión Cívica Radical (UCR). Líder, demócrata, estratega, fue elegido por la UCR para ser su candidato a presidente de la Nación en las elecciones de 2015. Padre de dos hijos y abuelo de un niño y una niña, vive entre su finca de San Rafael, Mendoza, junto a su mujer, Cristina Bessone, y la ciudad de Buenos Aires, desde donde trabaja con pasión por una Argentina mejor para todos.</p> 
+            
+          </div>
+          <div class="modal-footer">
+              <a class="btn btn-primary" data-dismiss="modal">Cerrar</a>
+              
+          </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="perfilLlach" role="dialog">
+  <div class="modal-dialog bio">
+    <div class="modal-content backgroundable">
+
+          <div class="modal-header">
+           <h1>Lucas Llach</h1>
+          </div>
+          <div class="modal-body">
+
+            <%= image_tag "equipo/LLlach.png" %>
+
+            <p>Nació en Buenos Aires, en el año 1973, pero se siente rosarino. Es un prestigioso economista, docente y ensayista. Realizó sus estudios de licenciatura en economía en la Universidad Torcuato Di Tella y se graduó como Doctor en Historia en la Universidad de Harvard. Su principal área de investigación es la historia económica argentina. Publicó, junto a Pablo Gerchunoff, los libros "El ciclo de la ilusión y el desencanto" (1998) y "Entre la equidad y el crecimiento" (2004), además de diversos trabajos en esa disciplina. Llach realiza sus actividades de investigación y docencia en la Universidad Torcuato Di Tella, donde es director del Departamento de Historia y de la Maestría en Políticas Públicas. Es hincha de Rosario Central y fanático de Messi. Es multifacético y sus intereses los convierte en obsesiones. En su blog del diario La Nación, "La Ciencia Maldita" escribe de política, fútbol, economía, política fiscal, educación, investigación, alimentación. En junio de 2015, fue designado por el candidato presidencial Ernesto Sanz como compañero de fórmula para las primarias de 2015, dentro del espacio Cambiemos.</p> 
+            
+          </div>
+          <div class="modal-footer">
+              <a class="btn btn-primary" data-dismiss="modal">Cerrar</a>
+              
+          </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="perfilFQuetgla" role="dialog">
+  <div class="modal-dialog bio">
+    <div class="modal-content backgroundable">
+
+          <div class="modal-header">
+           <h1>Ernesto Sanz</h1>
+          </div>
+          <div class="modal-body">
+            
+            <div class="col-md-4">
+            <%= image_tag "equipo/FQuetgla.png" %>
+            </div>
+            <div class="col-md-8">
+            <p>Fabio insiste en que Argentina inicie el largo camino de una reconfiguración territorial para saldar nuestra deuda histórica.</p> <br>
+            <p>Una Nación no puede avanzar en la contradicción de ver crecer metrópolis ingobernables, al tiempo que enormes espacios carecen de las condiciones para un desarrollo que garantice empleo y dignidad.</p> <br>
+            <p>Las áreas metropolitanas califican si el país re equilibra sus flujos migratorios; sino seguirán receptando personas en busca de un presente.</p> <br>
+            <p>El Desarrollo Territorial es sumar un programa de infraestructuras adecuado, sostener un plan fiscal razonable, crear un plan de hábitat ambicioso en ciudades medianas y pequeñas, mejorar las capacidades institucionales y también invertir más en las personas. Y, por supuesto, potenciar desde las ciudades intermedias un país equilibrado; que rompa la lógica centralista asfixiante.</p> <br>
+            <p>Argentina puede hacerlo. La agenda del desarrollo no es desconocida para nosotros, solo debemos abandonar por un momento la obsesión coyunturalista.</p> <br>
+            <p>Fabio tiene 50 años. Nació en Avellaneda, por aquellos años corazón de la Argentina industrial. Se crió en un hogar humilde de inmigrantes árabes. Trabajó y estudió desde muy chico. Es fan de Bochini. Fue cadete, adicionista y canillita. En el 83' lo cautivó la prosa florida de Raúl Alfonsín. Está casado con Verónica. Tiene dos hijos: Eva y Juan.</p> <br>
+            <p>El desarrollo territorial es el nombre del desarrollo para todos; y Fabio es mi hombre en esta área.</p> <br>
+            </div>
+            
+          </div>
+          <div class="modal-footer">
+              <a class="btn btn-primary" data-dismiss="modal">Cerrar</a>
+              
+          </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="perfilMTetaz" role="dialog">
+  <div class="modal-dialog bio" style="width: 75%;">
+    <div class="modal-content backgroundable">
+
+          <div class="modal-header">
+           <h1>Martin Tetaz</h1>
+          </div>
+          <div class="modal-body">
+            <div class="col-md-4">
+            <%= image_tag "equipo/MTetaz.png" %>
+            </div>
+            <div class="col-md-8">
+            <p>Pensemos en Argentina 2050. No es habitual que un economista hable o especule sobre la morfología del futuro, pero es imperdonable que un político no lo haga. Martín Tetaz se preugnta: ¿Cuál será el motor de la demanda mundial cuando China consolide su clase media urbana, en unos 25 años? ¿Qué productos podremos vender en un mundo en el que las hamburguesas artificiales sean más baratas que las de carne vacuna, la energía solar más económica que el gas y la mayoría de los productos tangibles se fabriquen en impresoras hogareñas 3D?</p> <br>
+            <p>Martín nos trae esta propuesta: a diferencia de los productos de la revolución industrial, las nuevas formas de agregación de valor dependen de intangibles (programas) y construcciones simbólicas (marcas) que se construyen on line o en polos tecnológicos y no en fábricas convencionales. El éxito de su producción depende de la capacidad creativa y del pensamiento simbólico que deberían formarse en una nueva escuela, que aprovechando las tecnologías de gamming y juegos en red, acerque lo que sucede en las aulas virtuales, a la cultura de los jóvenes.</p> <br>
+            <p>Pero como decía Keynes, para llegar al largo plazo, hay que sobrevivir al corto. Necesitamos ordenar la economía, recuperar la moneda y con ella la soberanía monetaria.</p><br>
+            <p>Es preciso reformar la estructura tributaria eliminando los impuestos que traban el desarrollo y haciendo los tributos más visibles para que los ciudadanos le exijan al Gobierno que rinda cuentas, mejorando la calidad del gasto y eliminando la corrupción. La Economía del Comportamiento puede ayudarnos además a diseñar mejores políticas públicas en educación y salud.</p><br>
+            <p>Martin Tetaz es economista, especializado en la Economía del Comportamiento. Es autor de “Psychonomics: La Economía está en tu Mente” y “Economía para Abogados y Estudiantes de Derecho”. Publicó varios artículos científicos. Es columnista regular de medios televisivos, gráficos y radiales</p><br>
+            </div>
+            
+          </div>
+          <div class="modal-footer">
+              <a class="btn btn-primary" data-dismiss="modal">Cerrar</a>
+              
+          </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="perfilASalomon" role="dialog">
+  <div class="modal-dialog bio">
+    <div class="modal-content backgroundable">
+
+          <div class="modal-header">
+           <h1>ALEJANDRO SALOMÓN</h1>
+          </div>
+          <div class="modal-body">
+            <div class="col-md-4">
+            <%= image_tag "equipo/ASalomon.png" %>
+            </div>
+            <div class="col-md-8">
+            <p>"Este gobierno, ante la impotencia de no poder mejorar la seguridad, decidió destruir las estadísticas criminológicas. Para un diseño y ejecución de política criminológica eficaz hacen falta información criminológica verdadera y que refleje lo que realmente sucede. </p> <br>
+            <p>Hay que recuperar el control de las fronteras para evitar el ingreso de la droga, pero también hay que eliminar los mecanismos de lavado de dinero, que es lo que hace rentable al crimen organizado. </p> <br>
+            <p>Es mentira que el federalismo sea un obstáculo para que las fuerzas policiales del país y las de provincias trabajen en forma coordinada y compartiendo información. El Estado Nacional puede y debe recuperar el rol central del sistema de seguridad</p> <br>
+            <p>No se puede hacer frente a la conflictividad del delito del siglo 21 con leyes policiales de mediados del siglo 20, pensadas para la guerra fría y escrita por dictaduras militares. </p> <br>
+            <p>En un sistema penal que solo alcanza condenas para menos del 1% de los delitos, aumentar las penas es aumentarles las penas a nadie. Hay que mejorar la eficiencia de la justicia, y eso se mide con el aumento en el número de condenas. </p> <br>
+            <p>Las cárceles deben dejar de ser el lugar en donde se perfeccionan los delincuentes</p> <br>
+            <p>El UNASUR no debe agotar sus objetivos en declaraciones de las cumbres, es necesario pasar a acciones conjuntas en la lucha contra el crimen organizado. Hacer rimbombantes declaraciones de unidad, y después culpar a los extranjeros de ser los responsables de la inseguridad es una demostración de que el Estado argentino lleva adelante políticas espasmódicas y contradictorias." </p> <br>
+            <p>Alejandro Salomón es Licenciado en Ciencias Políticas y Diplomado en la Universidad e Chile en Control y Evaluación Policial. Fue subbsecretario de Seguridad de Mendoza; Director Académico del Instituto Universitario de Seguridad Pública (Mza); Rector del Instituto Universitario de la Policía Federal. Es Profesor titular de la cátedra Sistemas de Seguridad Comparados.</p> <br>
+            </div>
+          </div>
+          <div class="modal-footer">
+              <a class="btn btn-primary" data-dismiss="modal">Cerrar</a>
+              
+          </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="perfilVVassel" role="dialog">
+  <div class="modal-dialog bio">
+    <div class="modal-content backgroundable">
+
+          <div class="modal-header">
+           <h1>VERÓNICA VASSEL</h1>
+          </div>
+          <div class="modal-body">
+            <div class="col-md-4">
+            <%= image_tag "equipo/VVassel.png" %>
+            </div>
+            <div class="col-md-8">
+            <p>Verónica trabaja para mejorar la competitividad de las economías regionales a través de la visibilidad de sus marcas territoriales. Seguramente ya escuchaste de esto en conceptos como: marca ciudad, denominación de origen o Identificación geográfica.</p> <br>
+            <p>Nacida en Goya, Corrientes, una ciudad que por aquel tiempo vivía del cultivo y la industrialización del tabaco; la noción que le proveyó su propio ambiente fue decisiva para su especialización: Goya siempre pendía de un hilo, entre inundaciones y regulaciones.</p> <br>
+            <p>Crecer entre tantas desventuras y controversias, le permitiò entender que producción y comunicación difícilmente puedan ser escindibles. Por eso se formó en Ciencias de la Comunicación primero y en el Desarrollo Local después. </p> <br>
+            <p>Goya no es distinta a las cientos de ciudades, cuya identidad está marcada por sus tradiciones productivas. Identidades que muchas veces merecen ser revisadas y que siempre movilizan no solo intereses, sino pasiones e historias de vida.</p> <br>
+            <p>Cada lugar siempre puede construir nuevas alternativas. Debemos trabajar para que las personas puedan elegir donde vivir y para que emigrar sea solo una posibilidad y no una condena.</p> <br>
+            <p>Verónica tiene 42 años, es Licenciada en Ciencias de la Comunicación y tiene un máster en Desarrollo Local. Está casada con Fabio y es mamá de dos hijos.</p> <br>
+            </div>
+          </div>
+          <div class="modal-footer">
+              <a class="btn btn-primary" data-dismiss="modal">Cerrar</a>
+              
+          </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="perfilARamos" role="dialog">
+  <div class="modal-dialog bio">
+    <div class="modal-content backgroundable">
+
+          <div class="modal-header">
+           <h1>ADRIÁN RAMOS</h1>
+          </div>
+          <div class="modal-body">
+            <div class="col-md-4">
+            <%= image_tag "equipo/ARamos.png" %>
+            </div>
+            <div class="col-md-8">
+            <p>"Miremos hacia adelante. Es necesario tratar las inconsistencias: una economía difícilmente pueda funcionar adecuadamente en medio de la inestabilidad de precios, con un sector público deficitario y sin crédito, que depende de la emisión para financiarse, y un esquema cambiario hecho de parches.</p> <br>
+            <p>La economía argentina es compleja. Contamos con un sector agropecuario pampeano que no sólo se apoya en una dotación natural sino que manifiesta una destacada disposición a crecer mediante innovaciones técnicas y de gestión, pese a los frenos de política que se le atravesaron. Por su lado, cuando tuvieron un marco proclive a su operación, las economías regionales también mostraron dinamismo. La producción de servicios sofisticados con potencial de salida al exterior reflejó la presencia de reservorios de creatividad e iniciativa.</p> <br>
+
+            <p>En la industria manufacturera, ampliamente heterogénea, hay áreas de alta productividad, incluyendo PyMEs. Sin embargo, quien más quien menos, estos sectores tuvieron que enfrentar dificultades. Hacia adelante, el diseño de instituciones y políticas económicas debe facilitar que se potencien esas promesas, y las otras que vayan surgiendo. Pero no basta con eso si las fuerzas que impulsan el crecimiento no se propagan hacia el conjunto de la economía, particularmente en la forma de una demanda de trabajo capaz de sostener crecientes oportunidades de empleo e ingreso para toda la población."</p> <br>
+            <p>Adrián Ramos es Licenciado en Economía de la FCE-UBA, realizò el Master of Science in Economics en The London School of Economics and Political Science (Reino Unido). Actualmente Subdirector del Departamento de Economía y del Instituto Interdisciplinario de Economía Política de Buenos Aires (UBA CONICET). Es profesor de Estructura Económica Argentina. Fue economista de Organismos Internacionales, como la CEPAL, el BID y el PNUD.</p> <br>
+            </div>
+          </div>
+          <div class="modal-footer">
+              <a class="btn btn-primary" data-dismiss="modal">Cerrar</a>
+              
+          </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="perfilKBanfi" role="dialog">
+  <div class="modal-dialog bio">
+    <div class="modal-content backgroundable">
+
+          <div class="modal-header">
+           <h1>KARINA BANFI</h1>
+          </div>
+          <div class="modal-body">
+            <div class="col-md-4">
+            <%= image_tag "equipo/KBanfi.png" %>
+            </div>
+            <div class="col-md-8">
+            <p>La corrupción es el virus de la administración del Estado, mientras que la transparencia y el gobierno abierto son los antivirus para combatirla. Un Gobierno que promueve la participación y el acceso a la información es más cercano a su comunidad y favorece el goce de los derechos.</p> <br>
+            <p>El gobierno abierto es una iniciativa que se instala en las agendas políticas. La gestión del Estado debe ser abierta en todos los niveles posibles como una política de transparencia. El acceso a la información pública y la participación ciudadana en las decisiones de gobierno permitirán colaborar con la administración de los dilemas públicos en búsqueda de soluciones que canalicen el potencial innovador de los ciudadanos, el mercado y las organizaciones civiles para el beneficio de toda la sociedad. Esta inclusión obligará a fomentar procesos de coordinación en la administración pública. </p> <br>
+            <p>Para combatir la corrupción se deben incluir instrumentos de colaboración con los canales de investigación judicial y contar con medidas políticas claras de investigación interna. </p> <br>
+            <p>Karina es especialista en gobierno abierto y acceso a la información pública. Co fundadora y ex secretaria ejecutiva de la Alianza Regional por la Libre Expresión e Información. Integró el grupo de expertos que elaboró la Ley Modelo Interamericana de Acceso a la Información Pública de la OEA. Fue consultora de la Relatoría Especial para la Libertad de Expresión de la CIDH y coordinadora de programas de gobernabilidad y transparencia en la OEA.</p> <br>
+            </div>
+          </div>
+          <div class="modal-footer">
+              <a class="btn btn-primary" data-dismiss="modal">Cerrar</a>
+              
+          </div>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(e) {
+  $('img[usemap]').rwdImageMaps();
+  
+  $('.standard').hover(
+    function(){
+      var modal_path = $(this).find('.caption').attr('modal-name');
+      $(this).find('.caption').show();
+      $(this).click(function(event) {
+      $(modal_path).modal('show');
+      });
+    },
+    function(){
+      $(this).find('.caption').hide();
+    }
+  );
+    
+  $('.llachmap').mouseenter(function(){
+
+      $('.SanzLlachDer2').css({ "z-index": "0"});
+      $('.sanzllach').css({ "z-index": "-5"});
+
+
+    });
+  $('.llachmap').mouseleave(function(){
+
+      $('.SanzLlachDer2').css({ "z-index": "-10"});
+      $('.sanzllach').css({ "z-index": "0"});
+
+    });
+
+    $('.sanzmap').mouseenter(function(){
+
+      $('.SanzLlachIzq2').css({ "z-index": "0"});
+      $('.sanzllach').css({ "z-index": "-10"});
+
+    });
+  $('.sanzmap').mouseleave(function(){
+
+      $('.SanzLlachIzq2').css({ "z-index": "-10"});
+      $('.sanzllach').css({ "z-index": "0"});
+
+    });
+
+});
+
+</script>

@@ -1,6 +1,46 @@
-<h1><%= @post.title %></h1>
-<%= image_tag @post.image.url(:medium) %>
+<div><h1><%= @post.title %></h1>
+
+<div class="thumb">
+	<% for asset in @post.assets %>
+		
+		<%= link_to image_tag(asset.image.url(:thumb)), asset.image.url(:medium) %>
+		
+	<% end %>
+</div>	
+
 <small> <p> <%= @post.created_at.strftime("%b %d. %Y") %> </p> </small>
+<p>Created By: <%= @post.admin_user.name %></p>
 <p><%= @post.body %></p>
 <p>Category: <%= link_to @post.category.name, category_path(:id => @post.category.id) %></p>
 <p><%= link_to "Back", posts_path %></p>
+<hr>
+<%= render partial: 'shared/post_comment', collection: @post_comments %>
+<hr>
+<h3>Add a comment!</h3>
+<%= form_for @post_comment do |f| %>
+
+	<%= f.hidden_field :post_id %>
+
+	<p>
+	<%= f.label :name %><br />
+	<%= f.text_field :name %>
+	</p>
+
+	<p>
+	<%= f.label :email %><br />
+	<%= f.text_field :email %>
+	</p>
+
+	<p>
+	<%= f.label :body %><br />
+	<%= f.text_area :body %>
+	</p>
+
+	<p>
+	<%= f.submit "Post Comment" %>
+	</p>
+<% end %>
+
+
+
+</div>

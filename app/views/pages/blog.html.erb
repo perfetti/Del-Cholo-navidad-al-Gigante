@@ -1,10 +1,99 @@
-<% @posts.each do |post| %>
-	<div class="post">
-	<%= image_tag post.image.url(:large) %>
-	<h2 class="title"><%= link_to post.title,post%></h2>
-	<div class="entry"><%=  post.body %></div>
+<% provide(:blog, "active") %>
+<% provide(:title, "Blog") %>
 
-	<div class="byline">
-	</div>	
-</div>
+
+<div class="intro section header" id="page-nav-top">
+      <div class="w-embed">
+      <video poster="data:http://hoysanrafael.com/wp-content/uploads/2015/03/sanz.jpg" autoplay="true" loop="" style="width:100%; height: auto; position:absolute; z-index: -1;">
+    <source src="https://a0.muscache.com/airbnb/static/Seoul-P1-4.mp4" type="video/mp4">
+
+    <source src="http://syddev.com/jquery.videoBG/assets/tunnel_animation.ogv" type="application/ogg">
+
+    <img src="http://hoysanrafael.com/wp-content/uploads/2015/03/sanz.jpg" style="width:100%; height: auto; position:absolute; z-index: -1;">
+      </video>
+      </div>
+    <div class="container-fluid">
+         <div class="intro-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-5">
+                <ul class="list-inline lead">
+                    <li>
+                        <%= link_to (image_tag "social/icon-rs-fb.png"), "https://www.facebook.com/ernestoricardosanz" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/icon-rs-tw.png"), "https://twitter.com/sanzernesto" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/instgram-icon.png"), "https://instagram.com/sanz2015/" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/icon-rs-yt.png"), "https://www.youtube.com/user/sanzernestor" %>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+            </div>
+            <div class="col-md-2">
+               <%= link_to (image_tag "social/dona.png"), "#" %>
+            </div>
+
+
+            </div>
+            <div class="row">
+                 <h1 class="brand-heading">Blog<span class="color"></span></h1>
+                <p class="intro-text"></p>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!--Video Section Ends Here-->
+
+  <%= render 'shared/navbar' %>
+
+	<div class="container content">
+	
+			
+
+
+
+
+
+
+
+<% @posts.each do |post| %>
+	<div class="row">
+		<div class="col-lg-5">
+				<div class="thumb">
+				<% for asset in post.assets %>
+					
+				<%= link_to image_tag(asset.image.url(:medium)), asset.image.url(:medium) %>
+					
+				<% end %>
+				</div>
+		</div>
+			<div class="col-lg-5">
+			<h2 class="title"><%= link_to post.title,post%></h2>
+			<div class="entry"><%=  post.body %></div>
+		<small> <p> <%= post.created_at.strftime("%b %d. %Y") %> </p> </small>
+		<p>Created By: <%= post.admin_user.name %></p>
+		<p><%= post.body %></p>
+		<p>Category: <%= link_to post.category.name, category_path(:id => post.category.id) %></p>
+			</div>
+			</div>
 <% end %>
+
+

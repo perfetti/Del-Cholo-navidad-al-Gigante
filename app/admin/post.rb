@@ -1,33 +1,61 @@
 ActiveAdmin.register Post do
-  permit_params :permitted, :attributes, :title, :body, :category_id, :admin_user_id, :image
+ permit_params :permitted, :attributes, :title, :body, :category_id, :admin_user_id, assets_attributes: [:image]
 	menu :label => "Blog Posts"
 
   # Don't forget to add the image attribute (here thumbnails) to permitted_params
     # def permit_params
     #   permit_params :permitted, :attributes, :title, :body, :category_id, :admin_user_id, :image
     # end 
- 
+
+
   form :html => { :multipart => true } do |f|
     f.inputs 'Details' do
-      f.input :image, :required => false, :as => :file
+      f.input :category
+      f.input :admin_user
       f.input :title
       f.input :body
-      f.input :category
+      f.has_many :assets do |asset|
+        asset.input :image, as: :file, :label => "Image",:hint => asset.object.image.nil? ? asset.template.content_tag(:span, "No Image Yet") : asset.template.image_tag(asset.object.image.url(:thumb))
+        asset.input :_destroy, :as=>:boolean, :required => false, :label => 'Remove image'
+      end 
     end
     f.actions
   end
+
  
-  show do |ad|
+  show do |post|
       attributes_table do
         row :title
+        row :admin_user_id
         row :category
         row :body
-        row :image do
-          image_tag(ad.image.url(:thumb))
+        row "Assets" do 
+            ul do
+              post.assets.each do |asset|
+            li do 
+              image_tag(asset.image.url(:thumb))
+            end
+          end
         end
+    end
         # Will display the image on show object page
       end
     end
+
+
+# show do |product|
+#   attributes_table do
+# row "Images" do
+#    ul do
+#     product.images.each do |img|
+#       li do 
+#         image_tag(img.image.url(:small))
+#       end
+#     end
+#    end
+# end
+
+
 
 
   index do
@@ -40,16 +68,16 @@ ActiveAdmin.register Post do
     actions
   end
 
+#    permit_params do
+#   permitted = [:permitted, :attributes, :title, :body, :category_id, :admin_user_id, :assets_attributes]
+
+# #   permitted << :other if resource.something?
+# #   permitted
+# end
+# def post_params
+#   params.require(:post).permit(:title, :body, :category_id, :admin_user_id, assets_attributes: [:image])
+# end
+# def asset_params
+#   params.require(:asset).permit(:image)
+# end
 end
- 
-
-
-
-  # See permitted parameters documentation:
-  # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-  #
-  # permit_params :list, :of, :attributes, :on, :model
-  #
-  # or
-  #
-

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150614205018) do
+ActiveRecord::Schema.define(version: 20150618003959) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,10 +44,23 @@ ActiveRecord::Schema.define(version: 20150614205018) do
     t.inet     "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "name"
   end
 
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "assets", force: true do |t|
+    t.integer  "post_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  add_index "assets", ["post_id"], name: "index_assets_on_post_id", using: :btree
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -55,17 +68,34 @@ ActiveRecord::Schema.define(version: 20150614205018) do
     t.datetime "updated_at"
   end
 
+  create_table "post_comments", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.text     "body"
+    t.integer  "post_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "post_comments", ["post_id"], name: "index_post_comments_on_post_id", using: :btree
+
   create_table "posts", force: true do |t|
     t.string   "title"
     t.text     "body"
     t.integer  "category_id"
-    t.integer  "author_id"
+    t.integer  "admin_user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.integer  "phone"
+    t.integer  "dni"
+    t.string   "postal"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

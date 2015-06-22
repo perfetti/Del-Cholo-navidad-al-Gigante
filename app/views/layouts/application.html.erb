@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sanz Ernesto</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Sanz</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -9,29 +10,11 @@
 </head>
 <body>
 
-
-  <%= render 'shared/navbar' %>
-
+	
 	<div class="main-page-content <%= controller.controller_name %>">
-  <div class="flash-message">
-	<% flash.each do |key,value| %>
-	<p><%= value %></p>
-  <% end %>
-  </div>
-
-		<%= yield %>
+    <%= yield %>
 	</div>
-        <script type="text/javascript">
-            $('#videoheader').videoBG({
-              mp4:'http://syddev.com/jquery.videoBG/assets/tunnel_animation.mp4',
-              ogv:'http://syddev.com/jquery.videoBG/assets/tunnel_animation.ogv',
-              webm:'http://syddev.com/jquery.videoBG/assets/tunnel_animation.webm',
-              poster:'http://syddev.com/jquery.videoBG/assets/tunnel_animation.jpg',
-              loop: true,
-              scale:true,
-              zIndex:2
-            });
-        </script>
+
 
 </body>
 </html>

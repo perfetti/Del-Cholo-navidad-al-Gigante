@@ -16,8 +16,8 @@ class PagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get donar" do
-    get :donar
+  test "should get media" do
+    get :media
     assert_response :success
   end
 

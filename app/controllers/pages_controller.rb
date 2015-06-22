@@ -4,14 +4,20 @@ class PagesController < ApplicationController
 
   def blog
     @posts = Post.all
+    @adminuser = AdminUser.all
+    @assets = Asset.all
   end
 
   def propuestas
   end
 
-  def donar
+  def media
+    
   end
 
   def recursos
+  end
+
+    def unite
   end
 end

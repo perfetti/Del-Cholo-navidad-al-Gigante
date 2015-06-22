@@ -18,10 +18,10 @@
 //= require bootstrap/scrollspy
 //= require bootstrap/modal
 //= require bootstrap/dropdown
-//= require jquery.mb.YTPlayer.js
-//= require device.min.js
-//= require jquery.countdown.min.js
 //= require jquery.easing.min.js
 //= require smoothscroll.js
-//= require lovehub.js
+//= require script.js
+//= require device.min.js
+//= require jquery.rwdImageMaps.min.js
+
 //= require_tree .

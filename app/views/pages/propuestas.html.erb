@@ -1,322 +1,192 @@
-<h1>Pages#propuestas</h1>
+<% provide(:propuestas, "active") %>
+<% provide(:title, "Propuestas") %>
 
-<!-- Project Section -->
-<section id="project" class="head">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <h2 class="headerline">Nuestras Propuestas</h2>
-                <h4>Lorem ipsum dolor sit amet consecte tur adipiscingtitor.</h4>
+
+<body>
+
+<div class="intro section header" id="page-nav-top">
+      <div class="w-embed">
+
+      <%= image_tag "propuestas/headerPropuestas.png", style: "width:100%; min-height: 500px; position:absolute; z-index: -1;"  %>
+      </video>
+      </div>
+    <div class="container-fluid">
+         <div class="intro-body">
+        <div class="container-fluid">
+          <div class="row socialBTNs">
+            <div class="col-md-5">
+                <ul class="list-inline lead">
+                    <li>
+                        <%= link_to (image_tag "social/fb-icon.png"), "https://www.facebook.com/ernestoricardosanz" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/t-icon.png"), "https://twitter.com/sanzernesto" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/i-icon.png"), "https://instagram.com/sanz2015/" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/yt-icon.png"), "https://www.youtube.com/user/sanzernestor" %>
+                    </li>
+                </ul>
             </div>
+            <div class="col-md-5">
+            </div>
+            <div class="col-md-2">
+               <%= link_to (image_tag "social/dona.png"), "#" %>
+            </div>
+
+
+            </div>
+            <div class="row">
+                 <h1 class="brand-heading">Propuestas<span class="color"></span></h1>
+                <p class="intro-text"></p>
+
+            </div>
+
         </div>
     </div>
-</section>
-<div class="project wow fadeIn">
-    <div class="container-fluid text-center">
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
-                <a data-target="#projectModal1" class="project-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Educacion Para Todos
-                        </div>
-                    </div>
-                    <img src="https://agenda.weforum.org/espanol/files/2015/02/reu-ebook-reader-nook-640x400.jpg" class="img-responsive center-block" alt="">
-                </a>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!--Video Section Ends Here-->
+
+  <%= render 'shared/navbar' %>
+
+
+<div class="container content">
+    <div class="row" style="padding-bottom: 30px;">
+        <div class="col-sm-3 standard">
+            <div class="caption">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="learn-more">Learn more</a></p>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
-                <a data-target="#projectModal2" class="project-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Apoyo Infantil
-                        </div>
-                    </div>
-                    <img src="http://lanoticia.hn/wp-content/uploads/2014/01/messi-2013-640x400.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
-                <a data-target="#projectModal3" class="project-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Salud Publica
-                        </div>
-                    </div>
-                    <img src="http://cdn.forbes.com.mx/2014/03/web-gates-millonarios-640x400.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
-                <a data-target="#projectModal4" class="project-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Acceso A Agua Potable
-                        </div>
-                    </div>
-                    <img src="http://comouno.tv/wp-content/uploads/2015/04/Marco-en.wikipedia.org_-640x400-640x400.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
+
+            <%= image_tag "equipo/FQuetgla.png" %>
+
         </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
-                <a data-target="#projectModal5" class="project-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Apoyo Educativo
-                        </div>
-                    </div>
-                    <img src="http://lamaletaextraviada.com/wp-content/uploads/2012/08/TheoGosselin08-640x400.jpg" class="img-responsive center-block" alt="">
-                </a>
+        <div class="col-sm-3 standard">
+            <div class="caption">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="learn-more">Learn more</a></p>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
-                <a data-target="#projectModal6" class="project-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Alimentacion Saludable
-                        </div>
-                    </div>
-                    <img src="http://cdn.forbes.com.mx/2015/06/Shell_F-640x400.jpg" class="img-responsive center-block" alt="">
-                </a>
+
+            <%= image_tag "equipo/MTetaz.png" %>
+
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="learn-more">Learn more</a></p>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
-                <a data-target="#projectModal7" class="project-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Programa Deportivo
-                        </div>
-                    </div>
-                    <img src="http://crock.com.ar/wp-content/uploads/2015/05/Lenny-Kravitz-640x400.jpg" class="img-responsive center-block" alt="">
-                </a>
+            <%= image_tag "equipo/HAguiar.png" %>
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="learn-more">Learn more</a></p>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3 project-item no-pad">
-                <a data-target="#projectModal8" class="project-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            Acceso A Agua Potable
-                        </div>
-                    </div>
-                    <img src="http://upload.wikimedia.org/wikipedia/commons/d/db/Capybara_Hattiesburg_Zoo_(70909b-50)_640x400.jpg" class="img-responsive center-block" alt="">
-                </a>
-            </div>
+            <%= image_tag "equipo/ARamos.png" %>
         </div>
     </div>
 </div>
-
-
-
-<!-- project Modals -->
-<div class="work">
-    <div class="project-modal modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <i class="fa fa-times"></i>
+<div class="container">
+    <div class="row" style="padding-bottom: 30px;">
+        <div class="col-sm-3 standard">
+            <div class="caption">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="learn-more">Learn more</a></p>
             </div>
-            <div class="container">
-                <h2>Educacion Para Todos</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/project/1.jpg" class="img-responsive img-centered" alt="">
-                        <img src="img/10.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <div class="col-md-4">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>
-                            Fecha: <strong>Octubre 2014</strong><br>
-                            Donacion: <strong>$78,354 / $1,26,500</strong>
-                        </p>
-                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
+           <%= image_tag "equipo/ASalomon.png" %> 
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="learn-more">Learn more</a></p>
             </div>
+            <%= image_tag "equipo/ACampero.png" %>
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="learn-more">Learn more</a></p>
+            </div>
+           <%= image_tag "equipo/KBanfi.png" %> 
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="learn-more">Learn more</a></p>
+            </div>
+            <%= image_tag "equipo/VVassel.png" %>
         </div>
     </div>
-
-    <div class="project-modal modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <i class="fa fa-times"></i>
-            </div>
-            <div class="container">
-                <h2>Apoyo Infantil</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/project/2.jpg" class="img-responsive img-centered" alt="">
-                        <img src="img/1.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <div class="col-md-4">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>
-                            Fecha: <strong>Octubre 2014</strong><br>
-                            Donacion: <strong>$78,354 / $1,26,500</strong>
-                        </p>
-                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="project-modal modal fade" id="projectModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <i class="fa fa-times"></i>
-            </div>
-            <div class="container">
-                <h2>Salud Publica</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/project/3.jpg" class="img-responsive img-centered" alt="">
-                        <img src="img/6.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <div class="col-md-4">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>
-                            Fecha: <strong>Octubre 2014</strong><br>
-                            Donacion: <strong>$78,354 / $1,26,500</strong>
-                        </p>
-                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="project-modal modal fade" id="projectModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <i class="fa fa-times"></i>
-            </div>
-            <div class="container">
-                <h2>Acceso A Agua Potable</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/project/4.jpg" class="img-responsive img-centered" alt="">
-                        <img src="img/9.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <div class="col-md-4">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>
-                            Fecha: <strong>Octubre 2014</strong><br>
-                            Donacion: <strong>$78,354 / $1,26,500</strong>
-                        </p>
-                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="project-modal modal fade" id="projectModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <i class="fa fa-times"></i>
-            </div>
-            <div class="container">
-                <h2>Apoyo Educativos</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/project/5.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <div class="col-md-4">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>
-                            Fecha: <strong>Octubre 2014</strong><br>
-                            Donacion: <strong>$78,354 / $1,26,500</strong>
-                        </p>
-                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="project-modal modal fade" id="projectModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <i class="fa fa-times"></i>
-            </div>
-            <div class="container">
-                <h2>Alimentacion Saludable</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/project/6.jpg" class="img-responsive img-centered" alt="">
-                        <img src="img/11.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <div class="col-md-4">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>
-                            Fecha: <strong>Octubre 2014</strong><br>
-                            Donacion: <strong>$78,354 / $1,26,500</strong>
-                        </p>
-                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="project-modal modal fade" id="projectModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <i class="fa fa-times"></i>
-            </div>
-            <div class="container">
-                <h2>Programa Deportivo</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/project/7.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <div class="col-md-4">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>
-                            Fecha: <strong>Octubre 2014</strong><br>
-                            Donacion: <strong>$78,354 / $1,26,500</strong>
-                        </p>
-                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="project-modal modal fade" id="projectModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <i class="fa fa-times"></i>
-            </div>
-            <div class="container">
-                <h2>Acceso A Agua Potabla</h2>
-                <hr>
-                <div class="row">
-                    <div class="col-md-8">
-                        <img src="img/project/8.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                    <div class="col-md-4">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
-                        <p>
-                            Fecha: <strong>Octubre 2014</strong><br>
-                            Donacion: <strong>$78,354 / $1,26,500</strong>
-                        </p>
-                        <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </div>
+<div class="container">
+    <div class="row" style="padding-bottom: 30px;">
+        <div class="col-sm-3 standard">
+            <div class="caption">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="learn-more">Learn more</a></p>
+            </div>
+           <%= image_tag "equipo/AStubrin.png" %> 
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="learn-more">Learn more</a></p>
+            </div>
+           <%= image_tag "equipo/LLuchilo.png" %> 
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption">
+                <h3>Caption Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p><a href="#" class="learn-more">Learn more</a></p>
+            </div>
+           <%= image_tag "equipo/LQuevedo.png" %> 
+        </div>
+        <div class="col-sm-3 standard" id="menu">
+            <a href="#"><h2>MENU</h2></a>
+        </div>
+    </div>
+</div>
+<script>
+$(document).ready(function(e) {
+  $('img[usemap]').rwdImageMaps();
+  
+  $('.standard').hover(
+    function(){
+      var modal_path = $(this).find('.caption').attr('modal-name')
+      $(this).find('.caption').show();
+      $(this).click(function(event) {
+      $(modal_path).modal('show');
+      });
+    },
+    function(){
+      $(this).find('.caption').hide();
+    }
+  );
+  
+});
+</script>
+</body>

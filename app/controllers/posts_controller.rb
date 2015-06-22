@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+
   def index
   	@posts = Post.all
   end
@@ -6,6 +7,7 @@ class PostsController < ApplicationController
   def new
   	@post = Post.new
     @category = Category.all
+    5.times {@post.assets.build}
   end
 
   def create
@@ -19,6 +21,7 @@ class PostsController < ApplicationController
 
   def edit
   	@post = Post.find(params[:id])
+        5.times {@post.assets.build}
   end
 
   def update
@@ -32,6 +35,10 @@ class PostsController < ApplicationController
 
   def show
   	@post = Post.find(params[:id])
+    @category = Category.all
+    @adminuser = AdminUser.all
+    @post_comment = PostComment.new(:post => @post)
+
   end
 
   def destroy
@@ -44,7 +51,8 @@ class PostsController < ApplicationController
 
   private
   def post_params
-      params.require(:post).permit(:title, :body, :category_id, :author_id, :image)
+      params.require(:post).permit(:title, :body, :category_id, :author_id, :assets , :image,:assets_attributes [:image])
+
   end
 
 end

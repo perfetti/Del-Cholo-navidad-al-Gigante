@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
+  resources :post_comments
+
   get 'pages/perfiles'
 
   get 'pages/propuestas'
 
-  get 'pages/donar'
+  get 'pages/media'
 
   get 'pages/recursos'
 
@@ -30,13 +32,15 @@ Rails.application.routes.draw do
     resources :categories
     resources :admins
 
+  get '/unite', :to => 'pages#unite'
+
   get '/perfiles', :to => 'pages#perfiles'
 
   get '/blog', :to => 'pages#blog'
 
   get '/propuestas', :to => 'pages#propuestas'
 
-  get '/donar', :to => 'pages#donar'
+  get '/media', :to => 'pages#media'
 
   get '/recursos', :to => 'pages#recursos'
 

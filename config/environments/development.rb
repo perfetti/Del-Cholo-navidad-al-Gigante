@@ -33,7 +33,8 @@ Paperclip.options[:command_path] = 'C:\Program Files (x86)\GnuWin32\bin'
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
-
+config.assets.paths << "#{Rails.root}/app/assets/videos"
+config.assets.enabled = true
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 

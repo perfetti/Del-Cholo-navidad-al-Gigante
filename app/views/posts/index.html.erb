@@ -1,7 +1,15 @@
 <h1>Blog Posts</h1>
 <% @posts.each do |post| %>
-	<%= image_tag post.image.url(:medium) %>
+	<div class="thumb">
+	<% for asset in post.assets %>
+		
+		<%= link_to image_tag(asset.image.url(:thumb)), asset.image.url(:medium) %>
+		
+	<% end %>
+</div>	
 	<h3><%= link_to post.title, post %></h3>
+	<p>Created by: <%= post.admin_user.name %></p>
+	<p>Category: <%= link_to post.category.name, category_path(:id => post.category.id) %></p>
 	<p><%= post.body %></p>
 	<hr>
 <% end %>

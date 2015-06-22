@@ -1,113 +1,164 @@
-<!-- Intro Header -->
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<header class="intro">
+<% provide(:home, "active") %>
+<% provide(:title, "Home") %>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+ 
+      <%= render 'shared/formModal' %>
 
-    <!-- Video from YouTube. Have Questions? How To: https://github.com/pupunzi/jquery.mb.YTPlayer/wiki -->
-    <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=N_rBf2j_WxQ', containment:'.intro', autoPlay:true, loop:true, mute:true, startAt:8, stopAt: 60, quality:'small', opacity:1, showControls: false, showYTLogo:false, vol:25}"></a>
+  
+<div class="intro section header" id="page-nav-top">
+      <div class="w-embed">
+      <video poster="http://hoysanrafael.com/wp-content/uploads/2015/03/sanz.jpg" autoplay="true" loop="" style="width:100%; min-height: 500px; position:absolute; z-index: -1;">
+    <source src="/assets/videos/videoBanner.mp4" type="video/mp4">
 
-    <div class="intro-body">
-        <div class="container">
-            <div class="col-md-7">
-                <h1 class="brand-heading"><img src="http://ernestosanz.org.ar/imagenes/layout/logo.png"><span class="color">ERNESTO</span></h1>
-                <p class="intro-text">Frase inspiradora.</p>
-            </div>
+
+
+    <img src="http://hoysanrafael.com/wp-content/uploads/2015/03/sanz.jpg" style="width:100%; min-height: 500px; position:absolute; z-index: -1;">
+      </video>
+      </div>
+    <div class="container-fluid">
+         <div class="intro-body">
+        <div class="container-fluid">
+          <div class="row socialBTNs">
             <div class="col-md-5">
                 <ul class="list-inline lead">
                     <li>
-                        <a href="#about" class="btn btn-primary btn-lg page-scroll"><i class="fa fa-chevron-down"></i> Perfil</a>
+                        <%= link_to (image_tag "social/fb-icon.png"), "https://www.facebook.com/ernestoricardosanz" %>
                     </li>
                     <li>
-                        <a href="#action" class="btn btn-default btn-lg page-scroll"><i class="fa fa-chevron-down"></i>Voluntarios</a>
+                        <%= link_to (image_tag "social/t-icon.png"), "https://twitter.com/sanzernesto" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/i-icon.png"), "https://instagram.com/sanz2015/" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/yt-icon.png"), "https://www.youtube.com/user/sanzernestor" %>
                     </li>
                 </ul>
             </div>
+            <div class="col-md-5">
+            </div>
+            <div class="col-md-2">
+               <%= link_to (image_tag "social/dona.png"), "#" %>
+            </div>
 
-<!--             DIDI CHANGED
-            <div class="video-controls">
-                <a id="video-volume" class="fa fa-volume-off fa-lg" href="#"></a>
-                <a id="video-play" class="fa fa-pause fa-lg" href="#"></a>
-            </div> -->
+
+            </div>
+            <div class="row">
+                 <h1 class="brand-heading">El poder de la uni&oacute;n<span class="color"></span></h1>
+                <p class="intro-text"></p>
+
+            </div>
 
         </div>
     </div>
-</header>
-
-
-<!-- Action Section -->
-<section id="action" class="container-fluid">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 split-padding">
-            <h5 class="headerline">Voluntarios</h5>
-              <%= form_tag("/search", method: "get") do %>
-              <%= label_tag("Nombre:") %>
-              <%= text_field_tag(:q) %> 
-              <%= label_tag("Apellido:") %>
-              <%= text_field_tag(:q) %> <br>
-              <%= label_tag("Telefono:") %>
-              <%= text_field_tag(:q) %> 
-              <%= label_tag("Email:") %>
-              <%= text_field_tag(:q) %> <br>
-              <%= label_tag("C. Postal:") %>
-              <%= text_field_tag(:q) %> <br>
- <!--              <%= submit_tag("Enviar") %> -->
-            <% end %>
-            <p><a href="/" class="btn btn-default btn-lg">ENVIAR</a></p>
-
-        </div>
-
-
-
-        <div class="col-lg-6 col-md-6 split-padding0">
-            <h5 class="headerline">DONACIONES</h5>
-            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur ipsum dolor sit amet consecte ipsum dolor sit amet consecte tur adipiscingtitor diam, tur adipiscingtitor diam.</p>
-            <p><a href="/" class="btn btn-default btn-lg">DONAR</a></p>
-        </div>
-
-
-
-
-
-
     </div>
-</section>
-
-
-
-
-
-<!-- About3 Section -->
-<section id="about3" class="container-fluid">
-    <div class="row">
-        <div class="col-sm-6 split-padding4">
-            <h3 class="headerline">VOLUNTARIADO</h3>
-            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. </p>
-            <h3 class="headerline">EDUCACION</h3>
-            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. </p>
-        </div>
-        <div class="col-sm-6 split-padding5">
-            <h3 class="headerline">AYUDA Y APOYO</h3>
-            <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. </p>
-            <h3 class="headerline">CARIEDAD</h3>
-            <p>Sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreeta accumsan justo laoreet. </p>
-        </div>
     </div>
-</section>
 
 
-<!-- Contact Section -->
-<section id="contact" class="container-fluid text-center">
-    <div class="overlay"></div>
-    <div class="col-lg-6 col-lg-offset-3">
-        <h2 class="headerline">Contacto</h2>
-        <p>Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam</p>
-        <h3><i class="fa fa-phone"></i> (123) 456-7890</h3>
-        <ul class="list-inline lead">
-            <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-            <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
-            <li><a href="/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li>
-            <li><a href=""><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></a></li>
-        </ul>
-        <p><i class="fa fa-map-marker"></i> Paraguay 4519, Palermo, Buenos Aires</p>
-        <p class="text-muted">Copyright &copy; Ernesto Sanz 2015</p>
-    </div>
-</section>
+
+
+
+
+
+
+
+
+<!--Video Section Ends Here-->
+
+  <%= render 'shared/navbar' %>
+
+
+    <div class="container content">
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <br><br><br>
+            <blockquote id="randomquote">
+              <p></p> 
+
+            </blockquote>
+        </div>
+
+      </div>
+
+
+      <br><br><br>
+    </div> <!-- /container -->
+
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="400" height="225" src="https://www.youtube.com/embed/N_rBf2j_WxQ?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-6" id="formMini">
+          <form action="" class="form-horizontal">
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="form-group">
+          
+          <div class="col-sm-6">
+            <h1>UNITE!</h1>
+          </div>
+        </div>
+
+        <div class="form-group">
+          
+          <div class="col-sm-6">
+          <br>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+          
+          <div class="col-sm-6">
+            <input type="text" class="form-control" placeholder="Codigo Postal"/>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          
+          <div class="col-sm-6">
+            <input type="email" class="form-control" placeholder="Email"/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          
+          <div class="col-sm-6">
+            <button class="btn btn-primary col-lg-6 col-md-6 col-sm-6 form-control" type="submit" style="background-color: #CC0000;">Unite</button>
+            
+
+          </div>
+        </div>
+
+
+      </form>
+       </div>
+      </div>
+
+
+
+<ul class="nav pull-right scroll-top">
+  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
