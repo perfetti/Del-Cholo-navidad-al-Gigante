@@ -4,11 +4,8 @@
 
 
 
-<div class="intro section header" id="page-nav-top">
-      <div class="w-embed">
+<div class="section header perfiles" id="page-nav-top">
 
-      <%= image_tag "equipo/headerEquipo.png", style: "width:100% !important; min-height: 500px !important; position:absolute; z-index: -1;"  %>
-      </div>
     <div class="container-fluid">
          <div class="intro-body">
         <div class="container-fluid">
@@ -32,16 +29,11 @@
             <div class="col-md-5">
             </div>
             <div class="col-md-2">
-               <%= link_to (image_tag "social/dona.png"), "#" %>
+               <%= link_to (image_tag "social/dona.png"), "http://donar.ucr.org.ar" %>
+            </div>
             </div>
 
 
-            </div>
-            <div class="row">
-                 <h1 class="brand-heading perfiles">Perfiles<span class="color"></span></h1>
-                <p class="intro-text"></p>
-
-            </div>
 
         </div>
     </div>
@@ -73,20 +65,23 @@
         <div class="col-sm-12">
    
             <div class="sanzyllach">
+                <map name="sanzllachmap">
+                <area shape="rect" coords="61,60,833,923" class="sanzmap1" alt="sanzmap" target="" href="#perfilSanz" data-toggle="modal"/>
+                <area shape="rect" coords="897,61,1651,923" class="llachmap1" alt="llachmap" target="" href="#perfilLlach" data-toggle="modal"/>
+            </map>
+                        <map name="sanzmap">
+              <area shape="rect" coords="46,46,845,937" class="sanzmap2" alt="sanzmap" target="" href="#perfilSanz" data-toggle="modal" />
+            </map>
+                        <map name="llachmap">
+              <area shape="rect" coords="23,40,709,821" class="llachmap2" alt="llachmap" target="" href="#perfilLlach" data-toggle="modal"/>
+            </map>
 
             <%= image_tag "equipo/sanzllach.png", style: "display: inline;", usemap: "sanzllachmap", class: "sanzllach" %>
-            <map name="sanzllachmap">
-                <area shape="rect" coords="60,60,833,924" class="sanzmap" alt="sanzmap" target="" href="#perfilSanz" data-toggle="modal"/>
-                <area shape="rect" coords="896,60,1651,924" class="llachmap" alt="llachmap" target="" href="#perfilLlach" data-toggle="modal"/>
-            </map>
+            
             <%= image_tag "equipo/SanzLlachDer2.png", class: "SanzLlachDer2", usemap: "llachmap" %>
-            <map name="llachmap">
-              <area shape="rect" coords="35,52,697,811" class="llachmap" alt="llachmap" target="" href="#perfilLlach" data-toggle="modal"/>
-            </map>
+
             <%= image_tag "equipo/SanzLlachIzq2.png", class: "SanzLlachIzq2", usemap: "sanzmap" %>
-            <map name="sanzmap">
-              <area shape="rect" coords="52,52,730,811" class="sanzmap" alt="sanzmap" target="" href="#perfilSanz" data-toggle="modal" />
-            </map>
+
             </div>
 
 
@@ -96,132 +91,303 @@
 
 <div class="container">
     <div class="row" style="padding-bottom: 30px;">
-        <h3 class="perfiles">EXPERTOS PROGRAMATICOS</h3>
+        <h3 class="titulo-expertos">EXPERTOS PROGRAMATICOS</h3>
     </div>
 </div>
 
 <div class="container">
     <div class="row" style="padding-bottom: 30px;">
         <div class="col-sm-3 standard">
-            <div class="caption" modal-name="#perfilFQuetgla">
+            <%= image_tag "equipo/FQuetgla.png" %>
+            <div class="caption" modal-name="#perfilFQuetglas">
                 
                 <h3>Fabio Quetglas</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Experto en desarrollo territorial y gestión de ciudades..</p>
 
             </div>
 
-            <%= image_tag "equipo/FQuetgla.png" %>
+
 
         </div>
         <div class="col-sm-3 standard">
-            <div class="caption" modal-name="#perfilMTetaz">
-                <h3>Caption Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                
-            </div>
 
             <%= image_tag "equipo/MTetaz.png" %>
+            <div class="caption" modal-name="#perfilMTetaz">
+                <h3>Martín Tetaz</h3>
+                <p>Experto en economía.</p>
+                
+            </div>
+
 
         </div>
         <div class="col-sm-3 standard">
+            <%= image_tag "equipo/HAguiar.png" %>
             <div class="caption" modal-name="#perfilHAguiar">
-                <h3>Caption Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3>Henoch Aguiar</h3>
+                <p> Experto en políticas de comunicación y telecomunicaciones.</p>
                 
             </div>
-            <%= image_tag "equipo/HAguiar.png" %>
+            
         </div>
         <div class="col-sm-3 standard">
+            <%= image_tag "equipo/ARamos.png" %>
             <div class="caption" modal-name="#perfilARamos">
-                <h3>Caption Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3>Adrián Ramos</h3>
+                <p>Experto en Economía.</p>
                 
             </div>
-            <%= image_tag "equipo/ARamos.png" %>
+            
         </div>
     </div>
 </div>
 <div class="container">
     <div class="row" style="padding-bottom: 30px;">
         <div class="col-sm-3 standard">
+            <%= image_tag "equipo/ASalomon.png" %> 
             <div class="caption" modal-name="#perfilASalomon">
-                <h3>Caption Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3>Alejandro Salomón</h3>
+                <p>Experto en seguridad.</p>
                 
             </div>
-           <%= image_tag "equipo/ASalomon.png" %> 
+           
         </div>
         <div class="col-sm-3 standard">
-            <div class="caption" modal-name="#perfilACampero">
-                <h3>Caption Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <%= image_tag "equipo/JZungia.png" %>
+            <div class="caption" modal-name="#perfilJZungia">
+                <h3>Jimena Zuniga</h3>
+                <p>Experta en innovación</p>
                 
             </div>
-            <%= image_tag "equipo/ACampero.png" %>
+            
         </div>
+
         <div class="col-sm-3 standard">
+            <%= image_tag "equipo/KBanfi.png" %>
             <div class="caption" modal-name="#perfilKBanfi">
-                <h3>Caption Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3>Karina Banfi</h3>
+                <p>Experto en ciencia, tecnología e innovación.</p>
                 
             </div>
-           <%= image_tag "equipo/KBanfi.png" %> 
+            
         </div>
         <div class="col-sm-3 standard">
             <div class="caption" modal-name="#perfilVVassel">
-                <h3>Caption Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h3>Verónica Vassel</h3>
+                <p>Experta en comunicación territorial.</p>
                 
             </div>
             <%= image_tag "equipo/VVassel.png" %>
         </div>
     </div>
 </div>
+
 <div class="container">
     <div class="row" style="padding-bottom: 30px;">
-        <div class="col-sm-3 standard" modal-name="#perfilAStubrin">
-            <div class="caption">
-                <h3>Caption Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="col-sm-3 standard" >
+            <%= image_tag "equipo/AStubrin.png" %> 
+            <div class="caption" modal-name="#perfilAStubrin">
+                <h3>Adolfo Stubrin</h3>
+                <p> Experto en educación.</p>
                 
             </div>
-           <%= image_tag "equipo/AStubrin.png" %> 
+           
         </div>
-        <div class="col-sm-3 standard" modal-name="#perfilLLuchilo">
-            <div class="caption">
-                <h3>Caption Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <div class="col-sm-3 standard" >
+            <%= image_tag "equipo/LLuchilo.png" %> 
+            <div class="caption" modal-name="#perfilLLuchilo">
+                <h3>Lucas Luchilo</h3>
+                <p>Experto en ciencia y tecnología.</p>
                 
             </div>
-           <%= image_tag "equipo/LLuchilo.png" %> 
+           
         </div>
-        <div class="col-sm-3 standard" modal-name="#perfilLQuevedo">
-            <div class="caption">
-                <h3>Caption Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <div class="col-sm-3 standard" >
+            <%= image_tag "equipo/LQuevedo.png" %> 
+            <div class="caption" modal-name="#perfilLQuevedo">
+                <h3>Luis Quevedo</h3>
+                <p>Experto en cultura.</p>
                 
             </div>
-           <%= image_tag "equipo/LQuevedo.png" %> 
+           
         </div>
-        <div class="col-sm-3" id="menu">
-            <a href="#"><h2>MENU</h2></a>
+        
+
+    </div>
+</div>
+
+<hr>
+<br>
+<div class="container">
+    <div class="row" style="padding-bottom: 30px;">
+        <h3 class="titulo-expertos">NUESTROS CANDIDATOS</h3>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row" style="padding-bottom: 30px;">
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="">
+                
+                <h3>Aguad</h3>
+                <h2>CORDOBA</h2>
+
+            </div>
+
+            <%= image_tag "equipo/Aguad.png" %>
+
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="">
+                <h3>Ayala</h3>
+                <h2>CHACO</h2>
+                
+            </div>
+
+            <%= image_tag "equipo/Ayala.png" %>
+
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="">
+                <h3>Birzuela Del Moral</h3>
+                <h2>CATAMARCA</h2>
+                
+            </div>
+            <%= image_tag "equipo/BrizuelaDelMoral.png" %>
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="">
+                <h3>Cano</h3>
+                <h2>TUCUMAN</h2>
+                
+            </div>
+            <%= image_tag "equipo/Cano.png" %>
         </div>
     </div>
 </div>
 
+<div class="container">
+    <div class="row" style="padding-bottom: 30px;">
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="">
+                
+                <h3>Colombi</h3>
+                <h2>CORRIENTES</h2>
 
-<div class="modal fade" id="perfilSanz" role="dialog">
+            </div>
+
+            <%= image_tag "equipo/Colombi.png" %>
+
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="#">
+                <h3>Cornejo</h3>
+                <h2>MENDOZA</h2>
+                
+            </div>
+
+            <%= image_tag "equipo/Cornejo.png" %>
+
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="#">
+                <h3>Costa</h3>
+                <h2>SANTA CRUZ</h2>
+                
+            </div>
+            <%= image_tag "equipo/Costa.png" %>
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="">
+                <h3>Gonzalez</h3>
+                <h2>MISIONES</h2>
+                
+            </div>
+            <%= image_tag "equipo/Gonzales.png" %>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row" style="padding-bottom: 30px;">
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="">
+                
+                <h3>Martinez</h3>
+                <h2>LA RIOJA</h2>
+
+            </div>
+
+            <%= image_tag "equipo/Martinez.png" %>
+
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="">
+                <h3>Morales</h3>
+                <h2>JUJUY</h2>
+                
+            </div>
+
+            <%= image_tag "equipo/Morales.png" %>
+
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="">
+                <h3>Naidenoff</h3>
+                <h2>FORMOSA</h2>
+                
+            </div>
+            <%= image_tag "equipo/Naidenoff.png" %>
+        </div>
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="">
+                <h3>Sciurano</h3>
+                <h2>TIERRA DEL FUEGO</h2>
+                
+            </div>
+            <%= image_tag "equipo/Sciurano.png" %>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row" style="padding-bottom: 30px;">
+        <div class="col-sm-3 standard">
+            <div class="caption" modal-name="#perfilFQuetglas">
+                
+                <h3>Torroba</h3>
+                <h2>LA PAMPA</h2>
+
+            </div>
+
+            <%= image_tag "equipo/Torroba.png" %>
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="modal fade principal" id="perfilSanz" role="dialog">
   <div class="modal-dialog bio">
-    <div class="modal-content backgroundable">
+    <div class="modal-content">
 
           <div class="modal-header">
-           <h1>Ernesto Sanz</h1>
+           <h2>Ernesto Sanz</h2>
           </div>
           <div class="modal-body">
 
             <%= image_tag "equipo/ESanz.png" %>
-
-            <p>Nació en San Rafael, provincia de Mendoza, en el año 1956. Es abogado por herencia y político por vocación. Presidente de la Juventud Radical de su ciudad entre 1983 y 1985, inició su actividad política con todo el entusiasmo de la recuperación de la democracia. Fue intendente de San Rafael entre el año 1999 y el 2003, cuando fue elegido senador nacional por su provincia. Desde el año 2006 al 2010 fue miembro del Consejo de la Magistratura. Actual senador de la Nación por la provincia de Mendoza en un segundo mandato, es también presidente de la Unión Cívica Radical (UCR). Líder, demócrata, estratega, fue elegido por la UCR para ser su candidato a presidente de la Nación en las elecciones de 2015. Padre de dos hijos y abuelo de un niño y una niña, vive entre su finca de San Rafael, Mendoza, junto a su mujer, Cristina Bessone, y la ciudad de Buenos Aires, desde donde trabaja con pasión por una Argentina mejor para todos.</p> 
+            <p>
+                Nació en San Rafael, provincia de Mendoza, en el año 1956. Es abogado por herencia y político por vocación. Presidente de la Juventud Radical de su ciudad entre 1983 y 1985, inició su actividad política con todo el entusiasmo de la recuperación de la democracia.
+            </p><br>
+            <p>
+                Fue intendente de San Rafael entre el año 1999 y el 2003, cuando fue elegido senador nacional por su provincia. Desde el año 2006 al 2010 fue miembro del Consejo de la Magistratura. Actual senador de la Nación por la provincia de Mendoza en un segundo mandato, es también presidente de la Unión Cívica Radical (UCR).
+            </p><br>
+            <p>
+                Líder, demócrata, estratega, fue elegido por la UCR para ser su candidato a presidente de la Nación en las elecciones de 2015. Padre de dos hijos y abuelo de un niño y una niña, vive entre su finca de San Rafael, Mendoza, junto a su mujer, Cristina Bessone, y la ciudad de Buenos Aires, desde donde trabaja con pasión por una Argentina mejor para todos.
+            </p><br>
             
           </div>
           <div class="modal-footer">
@@ -232,18 +398,25 @@
   </div>
 </div>
 
-<div class="modal fade" id="perfilLlach" role="dialog">
+<div class="modal fade principal" id="perfilLlach" role="dialog">
   <div class="modal-dialog bio">
-    <div class="modal-content backgroundable">
+    <div class="modal-content">
 
           <div class="modal-header">
-           <h1>Lucas Llach</h1>
+           <h2>Lucas Llach</h2>
           </div>
           <div class="modal-body">
 
             <%= image_tag "equipo/LLlach.png" %>
-
-            <p>Nació en Buenos Aires, en el año 1973, pero se siente rosarino. Es un prestigioso economista, docente y ensayista. Realizó sus estudios de licenciatura en economía en la Universidad Torcuato Di Tella y se graduó como Doctor en Historia en la Universidad de Harvard. Su principal área de investigación es la historia económica argentina. Publicó, junto a Pablo Gerchunoff, los libros "El ciclo de la ilusión y el desencanto" (1998) y "Entre la equidad y el crecimiento" (2004), además de diversos trabajos en esa disciplina. Llach realiza sus actividades de investigación y docencia en la Universidad Torcuato Di Tella, donde es director del Departamento de Historia y de la Maestría en Políticas Públicas. Es hincha de Rosario Central y fanático de Messi. Es multifacético y sus intereses los convierte en obsesiones. En su blog del diario La Nación, "La Ciencia Maldita" escribe de política, fútbol, economía, política fiscal, educación, investigación, alimentación. En junio de 2015, fue designado por el candidato presidencial Ernesto Sanz como compañero de fórmula para las primarias de 2015, dentro del espacio Cambiemos.</p> 
+            <p>
+                Nació en Buenos Aires, en el año 1973, pero se siente rosarino. Es un prestigioso economista, docente y ensayista. Realizó sus estudios de licenciatura en economía en la Universidad Torcuato Di Tella y se graduó como Doctor en Historia en la Universidad de Harvard.
+            </p><br>
+            <p>
+                Su principal área de investigación es la historia económica argentina. Publicó, junto a Pablo Gerchunoff, los libros "El ciclo de la ilusión y el desencanto" (1998) y "Entre la equidad y el crecimiento" (2004), además de diversos trabajos en esa disciplina. Llach realiza sus actividades de investigación y docencia en la Universidad Torcuato Di Tella, donde es director del Departamento de Historia y de la Maestría en Políticas Públicas.
+            </p><br>
+            <p>
+                Es hincha de Rosario Central y fanático de Messi. Es multifacético y sus intereses los convierte en obsesiones. En su blog del diario La Nación, "La Ciencia Maldita" escribe de política, fútbol, economía, política fiscal, educación, investigación, alimentación. En junio de 2015, fue designado por el candidato presidencial Ernesto Sanz como compañero de fórmula para las primarias de 2015, dentro del espacio Cambiemos.
+            </p><br>
             
           </div>
           <div class="modal-footer">
@@ -253,12 +426,12 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="perfilFQuetgla" role="dialog">
+<div class="modal fade  expertos" id="perfilFQuetglas" role="dialog">
   <div class="modal-dialog bio">
-    <div class="modal-content backgroundable">
+    <div class="modal-content">
 
           <div class="modal-header">
-           <h1>Ernesto Sanz</h1>
+           <h2>Fabio Quetglas</h2>
           </div>
           <div class="modal-body">
             
@@ -283,12 +456,12 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="perfilMTetaz" role="dialog">
+<div class="modal fade expertos" id="perfilMTetaz" role="dialog">
   <div class="modal-dialog bio" style="width: 75%;">
-    <div class="modal-content backgroundable">
+    <div class="modal-content">
 
           <div class="modal-header">
-           <h1>Martin Tetaz</h1>
+           <h2>Martín Tetaz</h2>
           </div>
           <div class="modal-body">
             <div class="col-md-4">
@@ -299,7 +472,7 @@
             <p>Martín nos trae esta propuesta: a diferencia de los productos de la revolución industrial, las nuevas formas de agregación de valor dependen de intangibles (programas) y construcciones simbólicas (marcas) que se construyen on line o en polos tecnológicos y no en fábricas convencionales. El éxito de su producción depende de la capacidad creativa y del pensamiento simbólico que deberían formarse en una nueva escuela, que aprovechando las tecnologías de gamming y juegos en red, acerque lo que sucede en las aulas virtuales, a la cultura de los jóvenes.</p> <br>
             <p>Pero como decía Keynes, para llegar al largo plazo, hay que sobrevivir al corto. Necesitamos ordenar la economía, recuperar la moneda y con ella la soberanía monetaria.</p><br>
             <p>Es preciso reformar la estructura tributaria eliminando los impuestos que traban el desarrollo y haciendo los tributos más visibles para que los ciudadanos le exijan al Gobierno que rinda cuentas, mejorando la calidad del gasto y eliminando la corrupción. La Economía del Comportamiento puede ayudarnos además a diseñar mejores políticas públicas en educación y salud.</p><br>
-            <p>Martin Tetaz es economista, especializado en la Economía del Comportamiento. Es autor de “Psychonomics: La Economía está en tu Mente” y “Economía para Abogados y Estudiantes de Derecho”. Publicó varios artículos científicos. Es columnista regular de medios televisivos, gráficos y radiales</p><br>
+            <p>Martín Tetaz es economista, especializado en la Economía del Comportamiento. Es autor de “Psychonomics: La Economía está en tu Mente” y “Economía para Abogados y Estudiantes de Derecho”. Publicó varios artículos científicos. Es columnista regular de medios televisivos, gráficos y radiales</p><br>
             </div>
             
           </div>
@@ -310,12 +483,12 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="perfilASalomon" role="dialog">
+<div class="modal fade expertos" id="perfilASalomon" role="dialog">
   <div class="modal-dialog bio">
-    <div class="modal-content backgroundable">
+    <div class="modal-content">
 
           <div class="modal-header">
-           <h1>ALEJANDRO SALOMÓN</h1>
+           <h2>Alejandro Salomón</h2>
           </div>
           <div class="modal-body">
             <div class="col-md-4">
@@ -339,12 +512,12 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="perfilVVassel" role="dialog">
+<div class="modal fade expertos" id="perfilVVassel" role="dialog">
   <div class="modal-dialog bio">
-    <div class="modal-content backgroundable">
+    <div class="modal-content">
 
           <div class="modal-header">
-           <h1>VERÓNICA VASSEL</h1>
+           <h2>Verónica Vassel</h2>
           </div>
           <div class="modal-body">
             <div class="col-md-4">
@@ -366,12 +539,12 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="perfilARamos" role="dialog">
+<div class="modal fade expertos" id="perfilARamos" role="dialog">
   <div class="modal-dialog bio">
-    <div class="modal-content backgroundable">
+    <div class="modal-content">
 
           <div class="modal-header">
-           <h1>ADRIÁN RAMOS</h1>
+           <h2>Adrián Ramos</h2>
           </div>
           <div class="modal-body">
             <div class="col-md-4">
@@ -393,12 +566,12 @@
   </div>
 </div>
 
-<div class="modal fade" id="perfilKBanfi" role="dialog">
+<div class="modal fade expertos" id="perfilKBanfi" role="dialog">
   <div class="modal-dialog bio">
-    <div class="modal-content backgroundable">
+    <div class="modal-content">
 
           <div class="modal-header">
-           <h1>KARINA BANFI</h1>
+           <h2>Karina Banfi</h2>
           </div>
           <div class="modal-body">
             <div class="col-md-4">
@@ -418,8 +591,88 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade expertos" id="perfilLLuchilo" role="dialog">
+  <div class="modal-dialog bio">
+    <div class="modal-content">
+
+          <div class="modal-header">
+           <h2>Lucas Luchilo</h2>
+          </div>
+          <div class="modal-body">
+            <div class="col-md-4">
+            <%= image_tag "equipo/LLuchilo.png" %>
+            </div>
+            <div class="col-md-8">
+            <p>Lucas Luchilo es Profesor de historia y Magíster en Política y Gestión de la ciencia y la Tecnología (UBA). Se desempeña actualmente como investigador y coordinador del área de Educación Superior de Redes- Centro de Estudios de la Ciencia, el Desarrollo y la Educación Superior- Realiza docencia de grado y posgrado en las universidades de Buenos Aires, General Sarmiento, Tecnológica Nacional y Belgrano.  Su área de especialización es la de recursos humanos en ciencia y tecnología y educación superior. En los últimos años ha trabajado sobre movilidad y migración de científicos e ingenieros y sobre trayectorias de profesionales con doctorado. Ha participado en proyectos sobre indicadores de recursos humanos en ciencia y tecnología. Asimismo, su campo de interés se extiende a los aspectos de organización y gestión institucional de las actividades científicas y tecnológicas..</p> <br>
+            </div>
+          </div>
+          <div class="modal-footer">
+              <a class="btn btn-primary" data-dismiss="modal">Cerrar</a>
+              
+          </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade expertos" id="perfilJZungia" role="dialog">
+  <div class="modal-dialog bio">
+    <div class="modal-content">
+
+          <div class="modal-header">
+           <h2>Jimena Zuniga</h2>
+          </div>
+          <div class="modal-body">
+            <div class="col-md-4">
+            <%= image_tag "equipo/JZungia.png" %>
+            </div>
+            <div class="col-md-8">
+            <p>Jimena Zuniga es nuestra Directora de Innovación en Políticas Públicas para la campaña. Va a trabajar codo a codo con Lucas Llach en la coordinación de los equipos técnicos y en la formulación y la comunicación de propuestas de políticas públicas innovadoras. </p> <br>
+            <p>Jimena tiene 36 años y es cordobesa, de Río Segundo. Estudió economía en la Universidad Nacional De Córdoba. Cuando se recibió trabajó un año en el instituto de estudios de la Fundación Mediterránea y poco tiempo después se fue a estudiar y a trabajar en el exterior. </p> <br>
+            <p>Hizo una maestría en políticas públicas en la Universidad de Harvard. </p> <br>
+            <p>Trabajó en Barclays Capital en Nueva York, en el Banco Mundial en Washington, y en ONGs de desarrollo como Global Development Network y Africare Senegal.</p> <br>
+            <p>En 2011 volvió a la Argentina y fundó <a href="https://www.facebook.com/BastionDigital">Bastion Digital</a>, un medio digital de análisis y opinión sobre asuntos públicos y culturales. Fue su directora hasta sumarse a nuestro equipo, el 8 de junio. </p> <br>
+            <p>Es una joven súper talentosa que busca influir positivamente sobre porciones de la realidad argentina y latinoamericana desde lo que ella llama, sus pasiones: la economía, las políticas públicas, y su análisis y comunicación. </p> <br>
+            </div>
+          </div>
+          <div class="modal-footer">
+              <a class="btn btn-primary" data-dismiss="modal">Cerrar</a>
+              
+          </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade expertos" id="perfilHAguiar" role="dialog">
+  <div class="modal-dialog bio">
+    <div class="modal-content">
+
+          <div class="modal-header">
+           <h2>Henoch Aguiar</h2>
+          </div>
+          <div class="modal-body">
+            <div class="col-md-4">
+            <%= image_tag "equipo/HAguiar.png" %>
+            </div>
+            <div class="col-md-8">
+            <p>Henoch es ex Secretario de Comunicaciones de la Argentina desde diciembre de 1999. Anteriormente fue elegido, por concurso, miembro del Directorio de la Comisión Nacional de Telecomunicaciones (1993-95). Fue asesor de la Comisión de Comunicaciones de la Cámara de Diputados (1992-93), de la Secretaría General de Presidencia (1987-89) y de la Secretaría de Información Pública (1985-87). Elaboró diversos proyectos de ley relacionados con las telecomunicaciones y la radiodifusión.</p> <br>
+            <p>Aguiar ha desarrollado una amplia carrera académica, siendo actualmente profesor titular de Derecho a la Información y de Comunicación Organizacional, en la Carrera de Comunicación Social de la Universidad de Buenos Aires. Además dicta clases de comunicaciones y telecomunicaciones en los postgrados de las Universidades de Belgrano, Austral, San Andrés, Católica Argentina, FLACSO y Palermo.</p><br>
+            <p>En su carácter de abogado experto en telecomunicaciones, ha sido socio titular del estudio Aguiar & Asociados, hasta 1999, como consultor especializado en comunicaciones, telecomunicaciones y radiodifusión.</p><br>
+            <p>Aguiar es Licenciado en Derecho. Realizó sus estudios en las Universidades de Buenos Aires, Paris I y Grenoble II (1970-75). Es graduado del postgrado de Economía y Finanzas del Institut d´ Études Politiques de París (1975-77), y obtuvo un Master en Dirección de Empresas en el IAE, Instituto de Altos Estudios Empresariales (1983-84).</p><br>
+            <p>Aguiar es miembro de número de la Academia Argentina de Artes y Ciencias de la Comunicación.</p><br>
+
+            </div>
+          </div>
+          <div class="modal-footer">
+              <a class="btn btn-primary" data-dismiss="modal">Cerrar</a>
+              
+          </div>
+    </div>
+  </div>
+</div>
+
 <script>
-$(document).ready(function(e) {
+$(window).load(function(e) {
   $('img[usemap]').rwdImageMaps();
   
   $('.standard').hover(
@@ -435,32 +688,6 @@ $(document).ready(function(e) {
     }
   );
     
-  $('.llachmap').mouseenter(function(){
-
-      $('.SanzLlachDer2').css({ "z-index": "0"});
-      $('.sanzllach').css({ "z-index": "-5"});
-
-
-    });
-  $('.llachmap').mouseleave(function(){
-
-      $('.SanzLlachDer2').css({ "z-index": "-10"});
-      $('.sanzllach').css({ "z-index": "0"});
-
-    });
-
-    $('.sanzmap').mouseenter(function(){
-
-      $('.SanzLlachIzq2').css({ "z-index": "0"});
-      $('.sanzllach').css({ "z-index": "-10"});
-
-    });
-  $('.sanzmap').mouseleave(function(){
-
-      $('.SanzLlachIzq2').css({ "z-index": "-10"});
-      $('.sanzllach').css({ "z-index": "0"});
-
-    });
 
 });
 

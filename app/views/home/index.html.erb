@@ -6,15 +6,13 @@
 
   
 <div class="intro section header" id="page-nav-top">
-      <div class="w-embed">
-      <video poster="http://hoysanrafael.com/wp-content/uploads/2015/03/sanz.jpg" autoplay="true" loop="" style="width:100%; min-height: 500px; position:absolute; z-index: -1;">
+      <video poster="data:http://hoysanrafael.com/wp-content/uploads/2015/03/sanz.jpg" autoplay="true" loop="" style="width:100%; height: auto; position:absolute; z-index: -1;">
     <source src="/assets/videos/videoBanner.mp4" type="video/mp4">
 
+    <source src="" type="application/ogg">
 
-
-    <img src="http://hoysanrafael.com/wp-content/uploads/2015/03/sanz.jpg" style="width:100%; min-height: 500px; position:absolute; z-index: -1;">
+    <img src="http://hoysanrafael.com/wp-content/uploads/2015/03/sanz.jpg" style="width:100%; height: auto; position:absolute; z-index: -1;">
       </video>
-      </div>
     <div class="container-fluid">
          <div class="intro-body">
         <div class="container-fluid">
@@ -37,15 +35,14 @@
             </div>
             <div class="col-md-5">
             </div>
-            <div class="col-md-2">
-               <%= link_to (image_tag "social/dona.png"), "#" %>
+           <div class="col-md-2">
+               <%= link_to (image_tag "social/dona.png"), "http://donar.ucr.org.ar" %>
             </div>
 
 
             </div>
             <div class="row">
-                 <h1 class="brand-heading">El poder de la uni&oacute;n<span class="color"></span></h1>
-                <p class="intro-text"></p>
+                 <h1 class="brand-heading">El poder de la uni&oacute;n</p>
 
             </div>
 
@@ -74,16 +71,18 @@
       <div class="row">
         <div class="col-md-12 col-lg-12">
           <br><br><br>
+
             <blockquote id="randomquote">
-              <p></p> 
+             <span><p></p> </span>
 
             </blockquote>
+             <br><br><br><br>
         </div>
 
       </div>
 
 
-      <br><br><br>
+      <br><br><br><br>
     </div> <!-- /container -->
 
 
@@ -98,16 +97,21 @@
 
 
 
+
+
         <div class="col-md-6" id="formMini">
-          <form action="" class="form-horizontal">
 
+          <form action="?" class="form-horizontal" method="post" id="registration" runat="vdaemon">
+              <vlsummary class="error" headertext="Error(s) found:">
+              <input type="hidden" name="formID" value="tablauser" />
+              <input type="hidden" name="redirect_to" value="" />
+              <input type="hidden" name="session_id" value="" />
+              <?php /** / ?>
+              <input type="hidden" name="source" value="web" />
+              <?php /**/ ?>
+              <input type="hidden" name="source" value="<?php echo $_SERVER['HTTP_REFERER ']?>">
 
-
-
-
-
-
-
+                <input type="hidden" name="fecha_alta" class=" form-control" value="<?php echo date("Y-m-d H:i:s"); ?>" />
 
 
 
@@ -131,7 +135,10 @@
         <div class="form-group">
           
           <div class="col-sm-6">
-            <input type="text" class="form-control" placeholder="Codigo Postal"/>
+              <vllabel errclass="error" validators="Input3NameReq" for="email" cerrclass="controlerror">
+              </vllabel>
+              <input type="email" name="email" class="input form-control" placeholder="Email"/>
+              <vlvalidator name="Input3NameReq" type="required" control="email" errmsg="Se requiere su email.">
           </div>
         </div>
 
@@ -139,14 +146,14 @@
         <div class="form-group">
           
           <div class="col-sm-6">
-            <input type="email" class="form-control" placeholder="Email"/>
+            <input type="text" name="cp" class="input form-control" placeholder="Codigo Postal"/>
           </div>
         </div>
 
         <div class="form-group">
           
           <div class="col-sm-6">
-            <button class="btn btn-primary col-lg-6 col-md-6 col-sm-6 form-control" type="submit" style="background-color: #CC0000;">Unite</button>
+            <button class="btn btn-primary col-lg-6 col-md-6 col-sm-6 form-control" type="submit" value="Submit" style="background-color: #CC0000;">Unite</button>
             
 
           </div>
@@ -162,3 +169,36 @@
 <ul class="nav pull-right scroll-top">
   <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
 </ul>
+
+<script>
+$(window).load(function() {
+  var myQuotes = [{
+    quote: "El buen gobierno no es el que lo hace todo, sino el que le da a todos la posibilidad de hacer. No es el que produce, sino el que estimula la producción."
+}, {
+    quote: "Así como defiendo la igualdad de oportunidades para aprender, defiendo también la igualdad de oportunidades para emprender."
+}, {
+    quote: "El buen gobierno es el que contribuye a crear riqueza, no el que quiere quedarse con la riqueza del país. "
+}, {
+  quote: "Investigación, Innovación, Ciencia, Tecnología: todo eso es Conocimiento. Esa es y será cada vez más la frontera que separe a los países prósperos y avanzados de los países atrasados. "
+}, {
+    quote: "Hoy más que nunca, hay que tener un gobierno de gente honesta y responsable, no de agitadores ni de amigos de lo ajeno." 
+}, {
+    quote: "Nuestros enemigos son el miedo, la desigualdad, la pobreza, la inseguridad, la injusticia y la corrupción."
+}, {
+    quote: "Me comprometo a reconstruir la unidad de la sociedad argentina. Conmigo no habrá buenos y malos argentinos, sólo ciudadanos libres e iguales ante la ley."
+}, {
+    quote: "Somos los que tenemos  que construir una nueva mayoría política y liderar este cambio de época que la Argentina necesita para volver a ser un país próspero, justo, decente, confiable y respetado."
+}, {
+  quote:"Hoy el plan más urgente es garantizar a todos, emprendedores, empleadores y productores, que puedan realizar su actividad sin que el gobierno los moleste con trabas, con burocracias, con impuestos y con mentiras. " 
+}, {
+    quote: "En 2015 no habrá un ballotage entre dos nombres, sino entre dos culturas políticas: la del populismo o la de la República democrática. "
+    
+}];
+
+var randomQuote = Math.floor(Math.random() * myQuotes.length)
+
+$('p', '#randomquote').text(myQuotes[randomQuote].quote);
+
+});
+
+</script>

@@ -8,13 +8,13 @@
         </button>
       </div>
       <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav nav-justified">
-          <li class="slideUp navbtn <%= yield(:unite) %>"><%= link_to "UNITE", unite_path, class: "navBTN" %></li>
-          <li class="slideUp navbtn <%= yield(:perfiles) %>"><%= link_to "EQUIPO", perfiles_path %></li>
-          <li class="slideUp navhome <%= yield(:home) %>"><%= link_to (image_tag "sanzPresidente.png", class: "homeBTN", border: "0"), root_path, class: "homelink" %></li>
-          <li class="slideUp navbtn <%= yield(:propuestas) %>"><%= link_to "PROPUESTAS", propuestas_path %></li>
-          <li class="slideUp navbtn <%= yield(:recursos) %>"><%= link_to "HERRAMIENTAS", recursos_path %></li>
-
+        <ul class="nav navbar-nav nav-justified-fix">
+          <li><a class="slideUp" href="#section1">Perfiles</a></li>
+          <li><a class="slideUp" href="#section2">Blog</a></li>
+          <li class="slideUp <%= yield(:home) %>"><%= link_to "SANZ", root_path %></li>
+          <li class="slideUp <%= yield(:propuestas) %>"><%= link_to "Propuestas", propuestas_path %></li>
+          <li><a class="slideUp" href="#section5" data-toggle="modal">Donar</a></li>
+          <hr>
         </ul>
 
       </div><!--/.nav-collapse -->

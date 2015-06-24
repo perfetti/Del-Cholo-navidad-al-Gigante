@@ -1,0 +1,117 @@
+
+  
+<div class="section header unite" id="page-nav-top">
+
+    <div class="container-fluid">
+         <div class="intro-body">
+        <div class="container-fluid">
+          <div class="row socialBTNs">
+            <div class="col-md-5">
+                <ul class="list-inline lead">
+                    <li>
+                        <%= link_to (image_tag "social/fb-icon.png"), "https://www.facebook.com/ernestoricardosanz" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/t-icon.png"), "https://twitter.com/sanzernesto" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/i-icon.png"), "https://instagram.com/sanz2015/" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/yt-icon.png"), "https://www.youtube.com/user/sanzernestor" %>
+                    </li>
+            </div>
+            <div class="col-md-5">
+            </div>
+            <div class="col-md-2">
+               <%= link_to (image_tag "social/dona.png"), "#" %>
+            </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+<!--Video Section Ends Here-->
+
+  <%= render 'shared/navbar' %>
+
+<body>
+    
+  <div class="container formBackground">
+    <br><br><br><br><br><br>
+    <div class="row">
+      <div class="col-md-5">
+        <div class="panel panel-primary pannelBackground">
+          <div class="panel-body">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" id="inputEmail3"
+                    placeholder="Email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" id="inputPassword3"
+                    placeholder="Password" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 control-label">Skill</label>
+                <div class="col-sm-9">
+                  <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label">Dates range</label>
+                <div class="col-sm-9">
+                  <div class="input-daterange" id="datepicker">
+                    <div class="input-group">
+                      <input type="text" class="input-small form-control"
+                        name="start" /> <span class="input-group-addon">to</span> <input
+                        type="text" class="input-small form-control" name="end" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <label> <input type="checkbox" />Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default">Sign in</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+    
+      </div>
+    </div>
+    <br><br><br><br><br><br><br>
+  </div>
+</body>
+
+
+
+

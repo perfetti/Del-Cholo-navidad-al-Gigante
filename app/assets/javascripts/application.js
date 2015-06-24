@@ -23,5 +23,5 @@
 //= require script.js
 //= require device.min.js
 //= require jquery.rwdImageMaps.min.js
-
+//= require galleria
 //= require_tree .

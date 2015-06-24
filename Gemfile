@@ -14,7 +14,7 @@ gem 'devise'
 gem 'ransack'
 gem 'rails_12factor'
 gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
-
+gem 'galleria-rails', github: 'tristanperalta/galleria-rails'
 gem 'autoprefixer-rails'
 gem 'execjs'
 gem "paperclip", "~> 4.2"

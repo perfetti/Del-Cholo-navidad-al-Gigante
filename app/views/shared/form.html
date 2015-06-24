@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-12 formBackground">
 			<h2>Contact Form</h2>
 			<hr>
 
@@ -70,3 +70,155 @@
 	</div>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade completeForm" role="dialog">
+  <div class="modal-dialog" style="width: 100%;">
+    <div class="modal-content formModal">
+      <form class="form-horizontal">
+          <div class="modal-header">
+            <h4>Unite en Apoyo</h4>
+          </div>
+          <div class="modal-body">
+
+            <div class="form-group">
+
+              <label for="contact-name" class="col-lg-3 col-md-1 col-sm-1 control-label" ></label>
+              <div class="col-lg-3 col-md-5 col-sm-5">
+                <vllabel errclass="error" validators="InputNombreReq" for="name" cerrclass="controlerror"></vllabel><input type="text" name="nombre" class="input form-control" placeholder="Nombre"/>
+                <vlvalidator name="InputNameReq" type="required" control="name" errmsg="Se requiere su nombre.">
+              </div>
+              <div class="col-lg-3 col-md-5 col-sm-5">
+                <vllabel errclass="error" validators="InputApellidoReq" for="name" cerrclass="controlerror"></vllabel><input type="text" name="apellido" class="input form-control" placeholder="Apellido"/>
+                <vlvalidator name="InputApellidoReq" type="required" control="name" errmsg="Se requiere su pellido.">
+              </div>
+              <label for="contact-name" class="col-lg-3 col-md-1 col-sm-1 control-label" ></label>
+            </div>
+            <div class="form-group">
+
+              <label for="contact-name" class="col-lg-3 col-md-1 col-sm-1 control-label" ></label>
+              <div class="col-lg-3 col-md-5 col-sm-5">
+                <input type="integer" name="dni" class="input form-control" placeholder="D.N.I. (sin puntos o espacios)"/>
+              </div>
+              <div class="col-lg-3 col-md-5 col-sm-5">
+                <vllabel errclass="error" validators="InputEmailReq" for="email" cerrclass="controlerror"></vllabel> <input type="email" name="email" class="input form-control" placeholder="Email (miemail@ejemplo.com)"/>
+                <vlvalidator name="InputEmailReq" type="required" control="email" errmsg="Se requiere su email.">
+              </div>
+                <label for="contact-name" class="col-lg-3 col-md-1 col-sm-1 control-label" ></label>
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="contact-name" class="col-lg-3 col-md-1 col-sm-1 control-label" ></label>
+              <div class="col-lg-3 col-md-5 col-sm-5">
+                <input type="text" name="cp" class="input form-control" placeholder="Codigo Postal"/>
+              </div>
+              <div class="col-lg-3 col-md-5 col-sm-5">
+                <select name="Provincia" class="form-control">
+                  <option value="" disabled selected>Provincia</option>
+                  <option value="BA">Buenos Aires</option>
+                  <option value="CT">Catama Aurca</option>
+                  <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
+                  <option value="CC">Chaco</option>
+                  <option value="CH">Chubut</option>
+                  <option value="CBA">Córdoba</option>
+                  <option value="CR">Corrientes</option>
+                  <option value="ER">Entre Ríos</option>
+                  <option value="FO">Formosa</option>
+                  <option value="JY">Jujuy</option>
+                  <option value="LP">La Pampa</option>
+                  <option value="LR">La Rioja</option>
+                  <option value="MZ">Mendoza</option>
+                  <option value="MN">Misiones</option>
+                  <option value="NQ">Neuquén</option>
+                  <option value="RN">Río Negro</option>
+                  <option value="SA">Salta</option>
+                  <option value="SJ">San Juan</option>
+                  <option value="SL">San Luis</option>
+                  <option value="SC">Santa Cruz</option>
+                  <option value="SF">Santa Fe</option>
+                  <option value="SE">Santiago del Estero</option>
+                  <option value="TF">Tierra del Fuego</option>
+                  <option value="TM">Tucumán</option>
+                </select></p>
+              </div>
+                <label for="contact-name" class="col-lg-3 col-md-1 col-sm-1 control-label" ></label>
+            </div>
+
+            <div class="form-group">
+
+              <label for="contact-name" class="col-lg-3 col-md-1 col-sm-1 control-label" ></label>
+              <div class="col-lg-2 col-md-5 col-sm-5">
+                <select name="tipo_tel" class="form-control">
+                  <option value="" disabled selected>Tipo de Telefono</option>
+                  <option value="fijo">Fijo</option>
+                  <option value="cell">Cellular</option>
+                </select>
+              </div>
+              <div class="col-lg-4 col-md-5 col-sm-5">
+                <input type="tel" name="tel" class="input form-control" placeholder="Nro de telefono"/>
+              </div>
+                <label for="contact-name" class="col-lg-3 col-md-1 col-sm-1 control-label" ></label>
+            </div>
+
+
+
+            <div class="form-group">
+
+              <label for="contact-name" class="col-lg-3 col-md-1 col-sm-1 control-label" ></label>
+              <input type="checkbox" class="col-lg-1 col-md-1 col-sm-1 input-control" id="switch-state" name="checkbox" value="quiero_info" checked/> 
+              <button class="btn btn-primary col-lg-6 col-md-6 col-sm-6 input-control" type="button" data-switch-toggle="state">QUIERO RECIBIR INFORMACION</button>
+                <label for="contact-name" class="col-lg-3 col-md-1 col-sm-1 control-label" ></label>
+            </div>
+
+              <div class="form-group">
+
+              <label for="contact-name" class="col-lg-3 col-md-1 col-sm-1 control-label" ></label>
+              <input type="checkbox" class="col-lg-1 col-md-1 col-sm-1 input-control" id="switch-state" name="checkbox" value="quiero_info" checked/> 
+              <button class="btn btn-primary col-lg-6 col-md-6 col-sm-6 input-control" type="button" data-switch-toggle="state">QUIERO RECIBIR INFORMACION</button>
+                <label for="contact-name" class="col-lg-3 col-md-1 col-sm-1 control-label" ></label>
+            </div>
+
+            <div class="form-group">
+
+              <label for="contact-name" class="col-lg-3 col-md-1 col-sm-1 control-label" ></label>
+              <input type="checkbox" class="col-lg-1 col-md-1 col-sm-1 input-control" id="switch-state" name="checkbox" value="quiero_info" checked/> 
+              <button class="btn btn-primary col-lg-6 col-md-6 col-sm-6 input-control" type="button" data-switch-toggle="state">QUIERO RECIBIR INFORMACION</button>
+                <label for="contact-name" class="col-lg-3 col-md-1 col-sm-1 control-label" ></label>
+            </div>
+
+
+
+            
+          </div>
+          <div class="modal-footer">
+              <a class="btn btn-default" data-dismiss="modal">Cerrar</a>
+              
+          </div>
+      </form>
+    </div>
+
+  </div>
+</div>

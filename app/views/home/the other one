@@ -1,0 +1,198 @@
+<% provide(:home, "active") %>
+<% provide(:title, "Home") %>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+ 
+      <%= render 'shared/formModal' %>
+
+  
+<div class="section" id="page-nav-top">
+      <div class="w-embed">
+      <video poster="http://hoysanrafael.com/wp-content/uploads/2015/03/sanz.jpg" autoplay="true" loop="" style="width:100%; min-height: 500px; position:absolute; z-index: -1;">
+    <source src="/assets/videos/videoBanner.mp4" type="video/mp4">
+
+
+
+    <img src="http://hoysanrafael.com/wp-content/uploads/2015/03/sanz.jpg" style="width:100%; min-height: 500px; position:absolute; z-index: -1;">
+      </video>
+      </div>
+    <div class="container-fluid">
+         <div class="intro-body">
+        <div class="container-fluid">
+          <div class="row socialBTNs">
+            <div class="col-md-5">
+                <ul class="list-inline lead">
+                    <li>
+                        <%= link_to (image_tag "social/fb-icon.png"), "https://www.facebook.com/ernestoricardosanz" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/t-icon.png"), "https://twitter.com/sanzernesto" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/i-icon.png"), "https://instagram.com/sanz2015/" %>
+                    </li>
+                    <li>
+                        <%= link_to (image_tag "social/yt-icon.png"), "https://www.youtube.com/user/sanzernestor" %>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+            </div>
+            <div class="col-md-2">
+               <%= link_to (image_tag "social/dona.png"), "http://donar.ucr.org.ar" %>
+            </div>
+
+
+            </div>
+            <div class="row">
+                 <h1 class="brand-heading">El poder de la uni&oacute;n<span class="color"></span></h1>
+                <p class="intro-text"></p>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!--Video Section Ends Here-->
+
+  <%= render 'shared/navbar' %>
+
+
+    <div class="container content">
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <br><br><br>
+            <blockquote id="randomquote">
+             <span><p></p> </span>
+
+            </blockquote>
+             <br><br><br><br>
+        </div>
+
+      </div>
+
+
+      <br><br><br><br>
+    </div> <!-- /container -->
+
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="400" height="225" src="https://www.youtube.com/embed/N_rBf2j_WxQ?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-6" id="formMini">
+          <form action="" class="form-horizontal">
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="form-group">
+          
+          <div class="col-sm-6">
+            <h1>UNITE!</h1>
+          </div>
+        </div>
+
+        <div class="form-group">
+          
+          <div class="col-sm-6">
+          <br>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+          
+          <div class="col-sm-6">
+            <input type="text" class="form-control" placeholder="Codigo Postal"/>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          
+          <div class="col-sm-6">
+            <input type="email" class="form-control" placeholder="Email"/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          
+          <div class="col-sm-6">
+            <button class="btn btn-primary col-lg-6 col-md-6 col-sm-6 form-control" type="submit" style="background-color: #CC0000;">Unite</button>
+            
+
+          </div>
+        </div>
+
+
+      </form>
+       </div>
+      </div>
+
+
+
+<ul class="nav pull-right scroll-top">
+  <li><a href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+</ul>
+
+<script>
+$(window).load(function(e) {
+  var myQuotes = [{
+    quote: "El buen gobierno no es el que lo hace todo, sino el que le da a todos la posibilidad de hacer. No es el que produce, sino el que estimula la producción."
+}, {
+    quote: "Así como defiendo la igualdad de oportunidades para aprender, defiendo también la igualdad de oportunidades para emprender."
+}, {
+    quote: "El buen gobierno es el que contribuye a crear riqueza, no el que quiere quedarse con la riqueza del país. "
+}, {
+  quote: "Investigación, Innovación, Ciencia, Tecnología: todo eso es Conocimiento. Esa es y será cada vez más la frontera que separe a los países prósperos y avanzados de los países atrasados. "
+}, {
+    quote: "Hoy más que nunca, hay que tener un gobierno de gente honesta y responsable, no de agitadores ni de amigos de lo ajeno." 
+}, {
+    quote: "Nuestros enemigos son el miedo, la desigualdad, la pobreza, la inseguridad, la injusticia y la corrupción."
+}, {
+    quote: "Me comprometo a reconstruir la unidad de la sociedad argentina. Conmigo no habrá buenos y malos argentinos, sólo ciudadanos libres e iguales ante la ley."
+}, {
+    quote: "Somos los que tenemos  que construir una nueva mayoría política y liderar este cambio de época que la Argentina necesita para volver a ser un país próspero, justo, decente, confiable y respetado."
+}, {
+  quote:"Hoy el plan más urgente es garantizar a todos, emprendedores, empleadores y productores, que puedan realizar su actividad sin que el gobierno los moleste con trabas, con burocracias, con impuestos y con mentiras. " 
+}, {
+    quote: "En 2015 no habrá un ballotage entre dos nombres, sino entre dos culturas políticas: la del populismo o la de la República democrática. "
+    
+}];
+
+var randomQuote = Math.floor(Math.random() * myQuotes.length)
+
+$('p', '#randomquote').text(myQuotes[randomQuote].quote);
+
+});
+
+</script>
